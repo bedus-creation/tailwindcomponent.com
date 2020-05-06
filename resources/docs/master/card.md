@@ -5,8 +5,8 @@
 ## Basic Card
 Here is an example of basic bootstrap card using tailwind css.
 
-<div class="flex -mx-4">
-    <div class="w-1/2 mx-4 bg-gray-100">
+<div class="md:flex md:-mx-4">
+    <div class="w-full mb-2 md:w-1/2 md:mx-4 bg-gray-100">
         <a href="#" class="mb-4">
             <img class="rounded" src="/assets/docs/master/image-01.jpg">
         </a>
@@ -25,7 +25,7 @@ Here is an example of basic bootstrap card using tailwind css.
             </div>
         </div>
     </div>
-    <div class="w-1/2 mx-4 bg-gray-100">
+    <div class="w-full md:w-1/2 md:mx-4 bg-gray-100">
         <a href="#" class="mb-4">
             <img class="rounded" src="/assets/docs/master/image-01.jpg">
         </a>
@@ -46,11 +46,12 @@ Here is an example of basic bootstrap card using tailwind css.
     </div>
 </div>
 
-<div class="mt-10"></div>
+<div class="mt-5"></div>
+Example Code:
 
 ```html
-<div class="flex -mx-4">
-    <div class="w-1/2 mx-4 bg-gray-100">
+<div class="md:flex md:-mx-4">
+    <div class="w-full mb-2 md:w-1/2 md:mx-4 bg-gray-100">
         <a href="#" class="mb-4">
             <img class="rounded" src="/assets/docs/master/image-01.jpg">
         </a>
@@ -69,7 +70,7 @@ Here is an example of basic bootstrap card using tailwind css.
             </div>
         </div>
     </div>
-    <div class="w-1/2 mx-4 bg-gray-100">
+    <div class="w-full md:w-1/2 md:mx-4 bg-gray-100">
         <a href="#" class="mb-4">
             <img class="rounded" src="/assets/docs/master/image-01.jpg">
         </a>
@@ -95,8 +96,8 @@ Here is an example of basic bootstrap card using tailwind css.
 
 ## Card with Horizontal line on title
 
-<div class="flex -mx-4">
-    <div class="w-1/2 mx-4 border shadow-sm">
+<div class="md:flex md:-mx-4">
+    <div class="w-full mb-2 md:w-1/2 md:mx-4 border shadow-sm">
         <a href="#" class="mb-4">
             <img class="rounded" src="/assets/docs/master/image-01.jpg">
         </a>
@@ -116,13 +117,13 @@ Here is an example of basic bootstrap card using tailwind css.
             </div>
         </div>
     </div>
-    <div class="w-1/2 mx-4 border shadow-sm">
+    <div class="w-full mb-2 md:w-1/2 md:mx-4 border shadow-sm">
         <a href="#" class="mb-4">
             <img class="rounded" src="/assets/docs/master/image-01.jpg">
         </a>
         <div class="px-4 py-4">
             <div>
-                <a href="#" class="font-semibold leading-tight text-2xl text-gray-800 hover:text-gray-800">
+                <a href="#" class="font-semibold leading-tight text-2xl text-gray-800 hover:text-gray-800 ">
                 Bootstrap Card's Title
                 </a>
             </div>
@@ -140,8 +141,8 @@ Here is an example of basic bootstrap card using tailwind css.
 Example code.
 
 ```html
-<div class="flex -mx-4">
-    <div class="w-1/2 mx-4 border shadow-sm">
+<div class="md:flex md:-mx-4">
+    <div class="w-full mb-2 md:w-1/2 md:mx-4 border shadow-sm">
         <a href="#" class="mb-4">
             <img class="rounded" src="/assets/docs/master/image-01.jpg">
         </a>
@@ -161,13 +162,13 @@ Example code.
             </div>
         </div>
     </div>
-    <div class="w-1/2 mx-4 border shadow-sm">
+    <div class="w-full mb-2 md:w-1/2 md:mx-4 border shadow-sm">
         <a href="#" class="mb-4">
             <img class="rounded" src="/assets/docs/master/image-01.jpg">
         </a>
         <div class="px-4 py-4">
             <div>
-                <a href="#" class="font-semibold leading-tight text-2xl text-gray-800 hover:text-gray-800">
+                <a href="#" class="font-semibold leading-tight text-2xl text-gray-800 hover:text-gray-800 ">
                 Bootstrap Card's Title
                 </a>
             </div>
