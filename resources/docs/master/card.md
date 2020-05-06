@@ -136,6 +136,54 @@ Here is an example of basic bootstrap card using tailwind css.
         </div>
     </div>
 </div>
+<div class="mt-5"></div>
+Example code.
+
+```html
+<div class="flex -mx-4">
+    <div class="w-1/2 mx-4 border shadow-sm">
+        <a href="#" class="mb-4">
+            <img class="rounded" src="/assets/docs/master/image-01.jpg">
+        </a>
+        <div class="px-4 py-4">
+            <div>
+                <a href="#" class="font-semibold leading-tight text-2xl text-gray-800 hover:text-gray-800">
+                Bootstrap Card's Title
+                </a>
+            </div>
+            <hr class="border-gray-200 my-1 border-bottom-none" style="border-top-width:0">
+            <p class="text-gray-900">
+            Bootstrap card example using tailwind css with horizontal line below card title to distinguish design.
+            </p>
+            <div class='flex text-gray-700 text-sm '>
+                <div class="pr-3">May 6, 2020</div> 
+                <div>Posted by <span class="text-red-400">Admin</span></div>
+            </div>
+        </div>
+    </div>
+    <div class="w-1/2 mx-4 border shadow-sm">
+        <a href="#" class="mb-4">
+            <img class="rounded" src="/assets/docs/master/image-01.jpg">
+        </a>
+        <div class="px-4 py-4">
+            <div>
+                <a href="#" class="font-semibold leading-tight text-2xl text-gray-800 hover:text-gray-800">
+                Bootstrap Card's Title
+                </a>
+            </div>
+            <hr class="border-gray-200 my-1 border-bottom-none" style="border-top-width:0">
+            <p class="text-gray-900">
+            Bootstrap card example using tailwind css with horizontal line below card title to distinguish design.
+            </p>
+            <div class='text-gray-700 text-sm font-bold'>
+                <a href="#" class="float-right">Read more...</a>
+            </div>
+        </div>
+    </div>
+</div>
+```
+
+<div class="mt-10"></div>
 
 ## Background Image Card
 Here is an example of card with background Image.

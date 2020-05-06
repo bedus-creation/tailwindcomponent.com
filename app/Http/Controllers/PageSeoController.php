@@ -7,6 +7,13 @@ use Illuminate\Http\Request;
 
 class PageSeoController extends Controller
 {
+    protected $repository;
+
+    public function __construct(PageSeo $repository)
+    {
+        $this->repository = $repository;
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -14,7 +21,8 @@ class PageSeoController extends Controller
      */
     public function index()
     {
-        //
+        $pages = PageSeo::all();
+        return view('admin.pageseo.index', compact('pages'));
     }
 
     /**
@@ -24,7 +32,7 @@ class PageSeoController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.pageseo.create');
     }
 
     /**
@@ -35,7 +43,8 @@ class PageSeoController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        PageSeo::create($request->all());
+        return redirect()->to(route('pageseo.index'));
     }
 
     /**
@@ -55,9 +64,9 @@ class PageSeoController extends Controller
      * @param  \App\PageSeo  $pageSeo
      * @return \Illuminate\Http\Response
      */
-    public function edit(PageSeo $pageSeo)
+    public function edit(PageSeo $pageseo)
     {
-        //
+        return view('admin.pageseo.edit', compact('pageseo'));
     }
 
     /**
@@ -67,9 +76,11 @@ class PageSeoController extends Controller
      * @param  \App\PageSeo  $pageSeo
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, PageSeo $pageSeo)
+    public function update(Request $request, $id)
     {
-        //
+        $this->repository->findOrFail($id)
+            ->update($request->all());
+        return redirect()->back()->with('success', 'Pageseo has been updated.');
     }
 
     /**
