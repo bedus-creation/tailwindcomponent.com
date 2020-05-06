@@ -45,7 +45,8 @@ class PageSeoController extends Controller
     {
         $pageseo = PageSeo::create($request->all());
         if ($request->file) {
-            $pageseo->toCollection('cover')
+            $pageseo->toDisk('public')
+                ->toCollection('cover')
                 ->addMedia($request->file);
         }
         return redirect()->to(route('pageseo.index'));
@@ -86,7 +87,8 @@ class PageSeoController extends Controller
         $pageseo->update($request->all());
         if ($request->file) {
             optional(optional($pageseo->fromCollection('cover')->getMedia())->first())->delete();
-            $pageseo->toCollection('cover')
+            $pageseo->toDisk('public')
+                ->toCollection('cover')
                 ->addMedia($request->file);
         }
         return redirect()->back()->with('success', 'Pageseo has been updated.');
