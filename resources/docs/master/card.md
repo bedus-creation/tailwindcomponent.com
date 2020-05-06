@@ -97,7 +97,7 @@ Example Code:
 ## Card with Horizontal line on title
 
 <div class="md:flex md:-mx-4">
-    <div class="w-full mb-2 md:w-1/2 md:mx-4 border shadow-sm">
+    <div class="w-full mb-2 md:w-1/2 md:mx-4 border rounded shadow-sm">
         <a href="#" class="mb-4">
             <img class="rounded" src="/assets/docs/master/image-01.jpg">
         </a>
@@ -142,7 +142,7 @@ Example code.
 
 ```html
 <div class="md:flex md:-mx-4">
-    <div class="w-full mb-2 md:w-1/2 md:mx-4 border shadow-sm">
+    <div class="w-full mb-2 md:w-1/2 md:mx-4 border rounded shadow-sm">
         <a href="#" class="mb-4">
             <img class="rounded" src="/assets/docs/master/image-01.jpg">
         </a>
@@ -162,7 +162,7 @@ Example code.
             </div>
         </div>
     </div>
-    <div class="w-full mb-2 md:w-1/2 md:mx-4 border shadow-sm">
+    <div class="w-full mb-2 md:w-1/2 md:mx-4 border  shadow-sm">
         <a href="#" class="mb-4">
             <img class="rounded" src="/assets/docs/master/image-01.jpg">
         </a>
@@ -183,6 +183,46 @@ Example code.
     </div>
 </div>
 ```
+
+<div class="mt-10"></div>
+
+## Horizontal cards.
+Here is an example of horizontal card.
+
+<div class="flex my-4">
+    <div class="w-48 pr-3">
+        <a href="#" class="mb-4">
+            <img class="rounded" src="/assets/docs/master/image-01.jpg">
+        </a>
+    </div>
+    <div class="flex-1">
+        <h2 class="text-lg font-medium text-gray-800 my-0">Horizontal Cards are so beautiful.</h2>
+        <div class="my-2 text-gray-800 text-xs">
+            <span class="pr-4">14 May, 2020</span> <span class="">It Jobs </span>
+        </div>
+        <p class="font-light text-gray-900">
+            This is the example of horizontal cards using tailwind css. These examples are inspired by bootstrap cards design into different websites and others...
+        </p>
+    </div>
+</div>
+<hr class="border-gray-100" style="border-bottom-width:0">
+<div class="flex my-4">
+    <div class="flex-1">
+        <h2 class="text-lg font-medium text-gray-800 my-0">Horizontal Cards are so beautiful.</h2>
+        <div class="my-2 text-gray-800 text-xs">
+            <span class="mr-4">14 May, 2020</span> <span class="">It Jobs </span>
+        </div>
+        <p class="font-light text-gray-900">
+            This is the example of horizontal cards using tailwind css. These examples are inspired by bootstrap cards design into different websites and others...
+        </p>
+    </div>
+    <div class="w-48 pr-3">
+        <a href="#" class="mb-4">
+            <img class="rounded" src="/assets/docs/master/image-01.jpg">
+        </a>
+    </div>
+</div>
+
 
 <div class="mt-10"></div>
 

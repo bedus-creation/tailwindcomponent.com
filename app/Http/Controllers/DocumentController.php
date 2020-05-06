@@ -5,9 +5,7 @@ namespace App\Http\Controllers;
 use App\PageSeo;
 use Exception;
 use Illuminate\Http\Request;
-use League\CommonMark\GithubFlavoredMarkdownConverter;
-
-use Illuminate\Mail\Markdown;
+use League\CommonMark\CommonMarkConverter;
 
 class DocumentController extends Controller
 {
@@ -16,7 +14,7 @@ class DocumentController extends Controller
         try {
             $pageseo = PageSeo::with('media')->where('page_url', $request->path())->first() ?? optional();
             $docx = file_get_contents(resource_path('docs/master/' . $docx . '.md'));
-            $converter = new GithubFlavoredMarkdownConverter();
+            $converter = new CommonMarkConverter();
             $content = $converter->convertToHtml($docx);
             return view('docx.show', ['content' => $content, 'pageseo' => $pageseo]);
         } catch (Exception $e) {
