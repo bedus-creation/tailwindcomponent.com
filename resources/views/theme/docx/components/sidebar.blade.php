@@ -8,5 +8,7 @@
         <li class="py-1"><a class="text-gray-600" href="/component/list-group">List Group</a></li>
         <li class="py-1"><a class="text-gray-600" href="/component/media-object">Media Object</a></li>
         <li class="py-1"><a class="text-gray-600" href="/component/dropdown">Dropdowns</a></li>
+        <li class="py-1"><a class="text-gray-600" href="/component/card">Card</a></li>
+        <li class="py-1"><a class="text-gray-600" href="/component/column">Column</a></li>
     </ul>
 </div>
