@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreatePageSeosTable extends Migration
+class CreatePageViewsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,13 @@ class CreatePageSeosTable extends Migration
      */
     public function up()
     {
-        Schema::create('page_seos', function (Blueprint $table) {
+        Schema::create('page_views', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->string('page_url')->unique();
-            $table->string('page_title')->nullable();
-            $table->text('meta_keywords')->nullable();
-            $table->text('meta_description')->nullable();
+            $table->string('page_url');
+            $table->date('date');
+            $table->unsignedBigInteger('votes')->default(0);
+            $table->unique(['page_url', 'date']);
         });
     }
 
@@ -30,6 +30,6 @@ class CreatePageSeosTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('page_seos');
+        Schema::dropIfExists('page_views');
     }
 }
