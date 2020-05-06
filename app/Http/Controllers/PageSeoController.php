@@ -43,7 +43,11 @@ class PageSeoController extends Controller
      */
     public function store(Request $request)
     {
-        PageSeo::create($request->all());
+        $pageseo = PageSeo::create($request->all());
+        if ($request->file) {
+            $pageseo->toCollection('cover')
+                ->addMedia($request->file);
+        }
         return redirect()->to(route('pageseo.index'));
     }
 
@@ -78,8 +82,13 @@ class PageSeoController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $this->repository->findOrFail($id)
-            ->update($request->all());
+        $pageseo = $this->repository->findOrFail($id);
+        $pageseo->update($request->all());
+        if ($request->file) {
+            optional(optional($pageseo->fromCollection('cover')->getMedia())->first())->delete();
+            $pageseo->toCollection('cover')
+                ->addMedia($request->file);
+        }
         return redirect()->back()->with('success', 'Pageseo has been updated.');
     }
 
