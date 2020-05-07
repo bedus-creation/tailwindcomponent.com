@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>@yield('title','Tailwind css components examples')</title>
     <link href="/dist/css/tailwind.min.css" rel="stylesheet">
+    <link href="/dist/css/style.css" rel="stylesheet">
     <script src="/dist/js/alpine.min.js" defer></script>
     <script src="/dist/js/highlight.min.js"></script>
     <link rel="stylesheet" href="/dist/css/dracula.min.css">
@@ -29,12 +30,13 @@
 
 <body>
     <div id="app">
+        @include('theme.docx.components.navbar')
         <div class="md:flex">
             <div class="bg-gray-100 w-full md:w-1/5">
                 @include('theme.docx.components.sidebar')
             </div>
             <div class="w-full md:w-3/5">
-                <div class="px-8">
+                <div class="px-8 py-10">
                     @yield('content')
                 </div>
             </div>
