@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>@yield('title','Tailwind css components examples')</title>
-    <link href="/dist/css/tailwind.min.css" rel="stylesheet">
-    <link href="/dist/css/style.css" rel="stylesheet">
-    <script src="/dist/js/alpine.min.js" defer></script>
-    <script src="/dist/js/highlight.min.js"></script>
-    <link rel="stylesheet" href="/dist/css/dracula.min.css">
+    <link href="/assets/css/tailwind.min.css" rel="stylesheet">
+    <link href="/assets/css/style.css" rel="stylesheet">
+    <script src="/assets/js/alpine.min.js" defer></script>
+    <script src="/assets/js/highlight.min.js"></script>
+    <link rel="stylesheet" href="/assets/css/dracula.min.css">
     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/markdown.css">
     @yield('meta')

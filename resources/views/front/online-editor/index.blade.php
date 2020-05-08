@@ -27,12 +27,8 @@ Try Tailwind css Online
 @endsection
 
 @section('content')
-<div class="container">
-    <editor-page initcode="{{file_get_contents(resource_path('views/front/online-editor/code/tailwind.html'))}}">
-    </editor-page>
-</div>
+@inertia
 @endsection
 
 @section('scripts')
-@stack('scripts')
 @endsection

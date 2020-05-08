@@ -1,11 +1,10 @@
 const mix = require('laravel-mix');
 
-mix.setPublicPath('/dist/js/');
-mix.options({
+mix.webpackConfig({
     output: {
-        chunkFilename: '/dist/js/[name].js?id=[chunkhash]',
+        chunkFilename: 'dist/js/chunks/[name].js?id=[hash]',
     }
 });
 
-mix.js('resources/js/app.js', 'public/js')
-    .sass('resources/sass/app.scss', 'public/css');
+mix.js('resources/js/app.js', 'public/dist/js')
+    .sass('resources/sass/app.scss', 'public/dist/css');

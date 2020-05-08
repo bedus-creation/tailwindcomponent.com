@@ -7,12 +7,12 @@
     <div id="drag-right" class="panel-output pl-20">
       <iframe frameborder="0" scrolling="no" class="w-full h-screen" :srcdoc="code"></iframe>
     </div>
-    <action-button></action-button>
+    <action-button :code="code"></action-button>
   </div>
 </template>
 <script>
 import { codemirror } from "vue-codemirror";
-import "codemirror/lib/codemirror.css";
+
 import "codemirror/theme/dracula.css";
 export default {
   props: ["initcode"],

@@ -11,12 +11,13 @@
       class="fixed top-0 right-0 h-screen bg-gray-100 p-8 shadow z-10"
       style="width:24rem"
     >
-      <design-create-form></design-create-form>
+      <design-create-form :initcode="code"></design-create-form>
     </div>
   </div>
 </template>
 <script>
 export default {
+  props: ["code"],
   data() {
     return {
       show: false
