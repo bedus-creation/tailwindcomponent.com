@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="/assets/lib/codemirror-5.53.2/lib/codemirror.css">
     <script src="/assets/lib/codemirror-5.53.2/mode/javascript/javascript.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/dist/css/app.css">
+    <link rel="stylesheet" href="{{url(mix('dist/css/app.css'))}}">
     @yield('meta')
 </head>
 
