@@ -12,7 +12,6 @@
 </template>
 <script>
 import { codemirror } from "vue-codemirror";
-
 import "codemirror/theme/dracula.css";
 export default {
   props: ["initcode"],
