@@ -4,7 +4,7 @@
       <codemirror id="_editor" :options="cmOption" v-model="code"></codemirror>
     </div>
     <div id="dragbar" class="dragbar"></div>
-    <div id="drag-right" class="panel-output pl-20">
+    <div id="drag-right" class="panel-output px-20">
       <iframe frameborder="0" scrolling="no" class="w-full h-screen" :srcdoc="code"></iframe>
     </div>
   </div>
