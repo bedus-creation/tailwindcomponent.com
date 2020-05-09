@@ -1,4 +1,4 @@
-# Card
+# Tailwind Card
 
 <hr class="border-gray-200">
 

@@ -8,6 +8,9 @@
             </div>
         </a>
         <div class="flex">
+            <div class="px-3 py-3">
+                <a href="/design" class="font-thin text-blue-700">Design</a>
+            </div>
             <div class="pl-3 py-3">
                 <a target="_blank" href="/tailwind/try"
                     class="bg-green-400 hover:bg-green-500 hover:text-gray-100 text-white font-medium py-2 px-8 rounded-full font-hairline">Try
