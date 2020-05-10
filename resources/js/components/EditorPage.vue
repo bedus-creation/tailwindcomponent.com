@@ -5,7 +5,7 @@
     </div>
     <div id="dragbar" class="dragbar"></div>
     <div id="drag-right" class="panel-output px-20">
-      <iframe frameborder="0" class="w-full h-screen" :srcdoc="code"></iframe>
+      <iframe class="w-full h-screen" :srcdoc="code"></iframe>
     </div>
   </div>
 </template>
