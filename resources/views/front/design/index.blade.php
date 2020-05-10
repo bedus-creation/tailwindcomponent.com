@@ -27,7 +27,8 @@ Tailwind Css layout and template design examples.
 @endsection
 
 @section('content')
-<div class="md:flex justify-between flex-wrap -mx-4">
+{{-- Test Edit --}}
+<div class="md:flex flex-wrap -mx-4">
     @foreach($design as $item)
     <div class="w-full mb-2 md:w-1/3 px-4">
         <a target="_blank" href="{{$item->link()}}" class="mb-4">
