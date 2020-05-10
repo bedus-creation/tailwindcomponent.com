@@ -1,29 +1,30 @@
 @extends('theme.editor.app')
 
 @section('title')
-Try Tailwind css Online
+{{$editor->title}} | Try tailwind Component Online.
 @endsection
 
 @section('meta')
-<meta name="keywords" content="Tailwind, css, Online, editor, html, code-editor">
-<meta name="description" content="Tailwind css tools to try design online with code highlighting and many more.">
+<meta name="keywords" content="{{$pageseo->meta_keywords}}">
+<meta name="description" content="{{$pageseo->meta_description}}">
 
 <meta property="og:type" content="article" />
 <meta property="og:url" content="{{url()->current()}}" />
-<meta property="og:title" content="Try Tailwind css live online." />
+<meta property="og:title" content="{{$pageseo->page_title}}" />
+<meta property="og:image" content="{{$pageseo->cover}}" />
 <meta property="og:site_name" content="Tailwind Component" />
-<meta property="og:description"
-    content="Tailwind css tools to try design online with code highlighting and many more." />
+<meta property="og:description" content="{{$pageseo->meta_description}}" />
+<meta property="og:updated_time" content="{{optional($pageseo->updated_at)->format('Y-m-d\Th:i:s+05:00')}}">
 <meta property="article:author" content="@tailwindcomponent">
 
 <meta name="twitter:site" content="@tailwindcomponent">
 <meta name="twitter:creator" content="@tailwindcomponent">
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:domain" content="{{url('/')}}" />
-<meta name="twitter:title" property="og:title" itemprop="title" content="Try Tailwind css live online." />
-<meta name="twitter:image" property="og:image" content="" />
+<meta name="twitter:title" property="og:title" itemprop="title" content="{{$pageseo->page_title}}" />
+<meta name="twitter:image" property="og:image" content="{{$pageseo->cover}}" />
 <meta name="twitter:description" property="og:description" itemprop="description"
-    content="Tailwind css tools to try design online with code highlighting and many more." />
+    content="{{$pageseo->meta_description}}" />
 @endsection
 
 @section('content')

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 use App\Editor;
+use App\PageSeo;
 use Illuminate\Support\Facades\Redirect;
 use Inertia\Inertia;
 
@@ -24,7 +25,8 @@ class EditorController extends Controller
      */
     public function index()
     {
-        //
+        $editors = Editor::all();
+        return view('admin.editors.index', compact('editors'));
     }
 
     /**
@@ -46,7 +48,7 @@ class EditorController extends Controller
     public function store(Request $request)
     {
         $request->merge([
-            'slug' => Str::slug($request->title) . '-' . substr(md5(now()->timestamp), 0, 12)
+            'slug' => 'editors/' . Str::slug($request->title) . '-' . substr(md5(now()->timestamp), 0, 12)
         ]);
         $editor = $this->repository->create($request->all());
         return Redirect::route('editors.show', $editor->slug, 303);
@@ -60,12 +62,14 @@ class EditorController extends Controller
      */
     public function show($id)
     {
-        $editor = Editor::where('slug', $id)->firstOrFail();
+        $editor = Editor::where('slug', request()->path())
+            ->orWhere('slug', $id)->firstOrFail();
+        $pageseo = PageSeo::where('page_url', $editor->link())->first();
         Inertia::setRootView('front.online-editor.index');
 
         return Inertia::render('Editor/Index', [
             'initcode' => $editor->code
-        ]);
+        ])->withViewData(['pageseo' => $pageseo, 'editor' => $editor]);
     }
 
     /**
@@ -76,7 +80,9 @@ class EditorController extends Controller
      */
     public function edit($id)
     {
-        //
+        $editor = Editor::findOrFail($id);
+        $pageseo = PageSeo::firstOrCreate(['page_url' => $editor->link()]) ?? Optional();
+        return view('admin.editors.edit', compact('editor', 'pageseo'));
     }
 
     /**
@@ -88,7 +94,20 @@ class EditorController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $editor = Editor::findOrFail($id);
+        $request->merge([
+            'slug' => $editor->link()
+        ]);
+        $editor->update($request->all());
+        $pageseo = PageSeo::where('page_url', $editor->link())->first();
+        $pageseo->update($request->all());
+        if ($request->file) {
+            optional(optional($pageseo->fromCollection('cover')->getMedia())->first())->delete();
+            $pageseo->toDisk('public')
+                ->toCollection('cover')
+                ->addMedia($request->file);
+        }
+        return redirect()->back();
     }
 
     /**

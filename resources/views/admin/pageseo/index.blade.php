@@ -1,9 +1,11 @@
-<a href="{{route('pageseo.create')}}">Create a Pageseo</a>
+@extends('theme.admin.app')
 
+@section('content')
 @foreach ($pages as $item)
 <tr>
     <td>{{$item->page_url}}</td>
     <td>{{$item->page_title}}</td>
-    <td><a href="{{route('pageseo.edit',$item->id)}}"> {{$item->page_title}}</a></td>
+    <td><a class="text-blue-400" href="{{route('pageseo.edit',$item->id)}}">Edit</a></td>
 </tr>
 @endforeach
+@endsection

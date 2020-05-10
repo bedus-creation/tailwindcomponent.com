@@ -11,5 +11,6 @@
         <li class="py-1"><a class="text-gray-600" href="{{url('/component/card')}}">Card</a></li>
         <li class="py-1"><a class="text-gray-600" href="{{url('/component/column')}}">Column</a></li>
         <li class="py-1"><a class="text-gray-600" href="{{url('/component/form')}}">Form</a></li>
+        <li class="py-1"><a class="text-gray-600" href="{{url('/component/login-form')}}">Login Form</a></li>
     </ul>
 </div>

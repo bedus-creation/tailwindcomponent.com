@@ -19,6 +19,6 @@ class PageSeo extends Model
     public function getCoverAttribute()
     {
         return optional(optional($this->fromCollection('cover')->getMedia())->first())->link()
-            ?? url("/assets/img/logo.png");
+            ?? url("/assets/docs/master/image-01.jpg");
     }
 }
