@@ -13,6 +13,6 @@ class OnlineEditorController extends Controller
 
         return Inertia::render('Editor/Index', [
             'initcode' => file_get_contents(resource_path('views/front/online-editor/code/tailwind.html'))
-        ]);
+        ])->withViewData(['pageseo' => optional(), 'editor' => optional()]);;
     }
 }
