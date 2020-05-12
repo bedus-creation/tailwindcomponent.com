@@ -15,4 +15,4 @@ Route::resource('design', DesignController::class)->only(['index', 'show']);
 
 // Admin Editors
 Route::resource('admin/pageseo', PageSeoController::class);
-Route::resource('admin/editors', EditorController::class)->only(['index', 'edit', 'update']);
+Route::resource('admin/editors', EditorController::class)->only(['index', 'store', 'edit', 'update']);

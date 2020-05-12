@@ -51,7 +51,7 @@ class EditorController extends Controller
             'slug' => 'editors/' . Str::slug($request->title) . '-' . substr(md5(now()->timestamp), 0, 12)
         ]);
         $editor = $this->repository->create($request->all());
-        return Redirect::route('editors.show', $editor->slug, 303);
+        return Redirect::to($editor->link(), 303);
     }
 
     /**
