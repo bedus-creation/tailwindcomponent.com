@@ -10,6 +10,8 @@
         </li>
         <li class="py-1"><a class="leading-relaxed text-gray-600" href="{{url('/component/media-object')}}">Media
                 Object</a></li>
+        <li class="py-1"><a class="leading-relaxed text-gray-600" href="{{url('/component/modal')}}">Modal</a>
+        </li>
         <li class="py-1"><a class="leading-relaxed text-gray-600" href="{{url('/component/dropdown')}}">Dropdowns</a>
         </li>
         <li class="py-1"><a class="leading-relaxed text-gray-600" href="{{url('/component/card')}}">Card</a></li>

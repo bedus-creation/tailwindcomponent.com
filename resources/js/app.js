@@ -4,7 +4,7 @@ import Vue from 'vue'
 Vue.use(InertiaApp)
 
 // Components Registration
-Vue.component('EditorPage', () => import('./components/EditorPage'));
+// Vue.component('EditorPage', () => import('./components/EditorPage'));
 Vue.component('DesignCreateForm', () => import('./components/DesignCreateForm'));
 Vue.component('ActionButton', () => import('./components/ActionButton'));
 Vue.component('ActionButton', () => import('./components/ActionButton'));

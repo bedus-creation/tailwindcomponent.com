@@ -1,11 +1,11 @@
 <template>
-  <div class="flex w-full h-screen">
+  <div class="md:flex w-full h-screen">
     <div id="drag-left" class="panel-code h-screen">
       <codemirror id="_editor" :options="cmOption" v-model="code"></codemirror>
     </div>
-    <div id="dragbar" class="dragbar"></div>
-    <div id="drag-right" class="panel-output pl-20">
-      <iframe frameborder="0" scrolling="no" class="w-full h-screen" :srcdoc="code"></iframe>
+    <div id="dragbar" class="hidden md:block dragbar"></div>
+    <div id="drag-right" class="panel-output md:px-10 my-10 md:my-0">
+      <iframe frameborder="0" scrolling="yes" class="w-full h-screen" :srcdoc="code"></iframe>
     </div>
     <action-button :code="code"></action-button>
   </div>
@@ -79,22 +79,28 @@ p {
   color: darkslategray;
 }
 
-.drag-container {
-  display: flex;
-  min-height: 100vh;
-}
-.panel-code {
-  width: 50%;
-}
-
-.panel-output {
-  flex: 1;
-  width: calc(50% - 6px);
-}
-
 .dragbar {
   padding: 6px;
   cursor: col-resize;
   background-color: silver;
+}
+@media screen and (max-width: 768px) {
+  #drag-left {
+    width: 100% !important;
+  }
+}
+@media screen and (min-width: 768px) {
+  .drag-container {
+    display: flex;
+    min-height: 100vh;
+  }
+  .panel-code {
+    width: 50%;
+  }
+
+  .panel-output {
+    flex: 1;
+    width: calc(50% - 6px);
+  }
 }
 </style>
