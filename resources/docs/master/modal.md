@@ -7,7 +7,7 @@
 
 <div x-data="{ show: false }" class="p-4 border rounded-t-lg" style="font-family:Roboto">
     <div class="flex justify-center">
-        <button @click={show=true} type="button" class="leading-tight bg-blue-600 text-gray-200 rounded px-6 py-3 text-sm">Show Modal</Button>
+        <button @click={show=true} type="button" class="leading-tight bg-blue-600 text-gray-200 rounded px-6 py-3 text-sm focus:outline-none focus:border-white">Show Modal</Button>
     </div>
     <div x-show="show" tabindex="0" class="z-40 overflow-auto left-0 top-0 bottom-0 right-0 w-full h-full fixed">
         <div  @click.away="show = false" class="z-50 relative p-3 mx-auto my-0 max-w-full" style="width: 600px;">
@@ -32,7 +32,7 @@
 ```html
 <div x-data="{ show: false }">
     <div class="flex justify-center">
-        <button @click={show=true} type="button" class="leading-tight bg-blue-600 text-gray-200 rounded px-6 py-3 text-sm">Show Modal</Button>
+        <button @click={show=true} type="button" class="leading-tight bg-blue-600 text-gray-200 rounded px-6 py-3 text-sm focus:outline-none focus:border-white">Show Modal</Button>
     </div>
     <div x-show="show" tabindex="0" class="z-40 overflow-auto left-0 top-0 bottom-0 right-0 w-full h-full fixed">
         <div  @click.away="show = false" class="z-50 relative p-3 mx-auto my-0 max-w-full" style="width: 600px;">
@@ -60,12 +60,12 @@
 
 <div x-data="{ show: false }" class="p-4 border rounded-t-lg" style="font-family:Roboto">
     <div class="flex justify-center">
-        <button @click={show=true} type="button" class="leading-tight bg-blue-600 text-gray-200 rounded px-6 py-3 text-sm">Show Modal</Button>
+        <button @click={show=true} type="button" class="leading-tight bg-blue-600 text-gray-200 rounded px-6 py-3 text-sm focus:outline-none focus:border-white">Show Modal</Button>
     </div>
     <div x-show="show" tabindex="0" class="z-40 overflow-auto left-0 top-0 bottom-0 right-0 w-full h-full fixed">
         <div  @click.away="show = false" class="z-50 relative p-3 mx-auto my-0 max-w-full" style="width: 600px;">
             <div class="bg-white rounded shadow-lg border flex flex-col overflow-hidden">
-                <button @click={show=false} class="fill-current h-6 w-6 absolute right-0 top-0 m-6 font-3xl font-bold">&times;</button>
+                <button @click={show=false} class="fill-current h-6 w-6 absolute right-0 top-0 m-6 font-3xl font-bold focus:outline-none focus:border-white">&times;</button>
                 <div class="px-6 py-3 text-xl border-b font-bold">Title of the modal</div>
                 <div class="p-6 flex-grow">
                     <p>
@@ -91,8 +91,8 @@
                 </div>
                 <div class="px-6 py-3 border-t">
                     <div class="flex justify-end">
-                        <button @click={show=false} type="button" class="bg-gray-700 text-gray-100 rounded px-4 py-2 mr-1">Close</Button>
-                        <button type="button" class="bg-blue-600 text-gray-200 rounded px-4 py-2">Saves Changes</Button>
+                        <button @click={show=false} type="button" class="bg-gray-700 text-gray-100 rounded px-4 py-2 mr-1 focus:outline-none focus:border-white">Close</Button>
+                        <button type="button" class="bg-blue-600 text-gray-200 rounded px-4 py-2 focus:outline-none focus:border-white">Saves Changes</Button>
                     </div>
                 </div>
             </div>
