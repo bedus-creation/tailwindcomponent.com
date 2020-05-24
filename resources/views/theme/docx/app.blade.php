@@ -11,13 +11,23 @@
     <script src="/assets/js/alpine.min.js" defer></script>
     <script src="/assets/js/highlight.min.js"></script>
     <link rel="stylesheet" href="/assets/css/dracula.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Roboto&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Manjari:wght@100;400;700|Source+Code+Pro&family=Fira+Sans:wght@300&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/markdown.css">
     @yield('meta')
 </head>
 <style>
     body {
-        font-family: Roboto;
+        font-family: 'Manjari', sans-serif;
+    }
+
+    p,
+    h1,
+    h2,
+    h3,
+    a {
+        font-family: 'Fira Sans', sans-serif;
     }
 
     pre code {
