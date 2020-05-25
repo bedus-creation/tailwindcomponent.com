@@ -1,4 +1,4 @@
-<div class="md:fixed w-full md:w-1/5 overflow-y-scroll" style="top:70px;height:calc(100vh - 70px)">
+<div id="sidebar" class="md:fixed w-full md:w-1/5 overflow-y-scroll">
     <div class="px-8 pb-10">
         <h2 class="text-lg font-semibold mt-4 mb-2 py-3">Components</h2>
         <ul class="px-1 my-0">
