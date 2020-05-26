@@ -200,5 +200,5 @@
 </div>
 
 <div class="p-6 border rounded-t-lg text-center mt-16" style="font-family:Roboto">
-    <a href="editors/tailwind-slider-example-174e54f77257" class="leading-tight bg-blue-600 hover:text-gray-100 text-gray-200 rounded px-6 py-3 text-sm">Try Online</a>
+    <a href="/editors/tailwind-slider-example-174e54f77257" class="leading-tight bg-blue-600 hover:text-gray-100 text-gray-200 rounded px-6 py-3 text-sm">Try Online</a>
  </div>
