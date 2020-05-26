@@ -64,7 +64,7 @@ class EditorController extends Controller
     {
         $editor = Editor::where('slug', request()->path())
             ->orWhere('slug', $id)->firstOrFail();
-        $pageseo = PageSeo::where('page_url', $editor->link())->first();
+        $pageseo = PageSeo::where('page_url', $editor->link())->first() ?? optional();
         Inertia::setRootView('front.online-editor.index');
 
         return Inertia::render('Editor/Index', [
