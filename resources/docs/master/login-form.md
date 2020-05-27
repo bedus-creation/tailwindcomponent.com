@@ -4,7 +4,7 @@
 <h2 class="font-bold mb-4 text-gray-700 text-xl">1. Login Form with background blur Image</h2>
 <p class="my-4 leading-relaxed text-gray-700">Login Form Example with background blur image.</p>
 <div class="relative p-6 " style="font-family:Roboto">
-    <div class="w-full md:h-screen py-4 md:-mx-4" style="filter: blur(6px); background-image:url('/assets/docs/master/image-01.jpg')"></div>
+    <div class="w-full h-40 md:h-screen py-4 md:-mx-4" style="filter: blur(6px); background-image:url('/assets/docs/master/image-01.jpg')"></div>
     <div class="absolute w-4/5 md:w-3/5 bg-white rounded-lg" style="transform: translate(-50%, -50%); top:50%; left:50%">
         <div class="flex justify-center -mt-10">
             <img class="border-2 w-20 h-20 rounded-full" src="/assets/docs/master/image-01.jpg">
