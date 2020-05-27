@@ -119,7 +119,7 @@
     <div class="flex justify-between whitespace-no-wrap overflow-x-auto overflow-y-hidden py-2">
         <a href="https://bedramtamang.com.np" class="flex items-center" style="min-width:16rem;">
             <img src="https://bedramtamang.com.np/img/profile.jpg" alt="Avatar of Jonathan Reinink" class="w-10 h-10 rounded-full mr-12 md:mr-0">
-            <div class="px-2 hidden md:block">
+            <div class="px-2">
                 It's me Bed.
             </div>
         </a>

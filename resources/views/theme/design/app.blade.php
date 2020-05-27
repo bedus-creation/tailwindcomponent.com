@@ -26,6 +26,13 @@
         box-shadow: 0 1px 1px rgba(0, 0, 0, .075);
         color: #ca473f;
     }
+
+    @media screen and (min-width:768px) {
+        #sidebar {
+            top: 70px;
+            height: calc(100vh - 70px)
+        }
+    }
 </style>
 
 <body>

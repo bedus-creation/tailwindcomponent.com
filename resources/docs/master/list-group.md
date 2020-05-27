@@ -1,12 +1,19 @@
-# List group
-Example of Bootstrap list group using tailwind css.
-<ul class="px-0">
-  <li class="border rounded-sm px-3 py-3" style='border-bottom-width:0'>List Item 1</li>
-  <li class="border rounded-sm px-3 py-3" style='border-bottom-width:0'>List Item 2</li>
-  <li class="border rounded-sm px-3 py-3" style='border-bottom-width:0'>List item 3</li>
-  <li class="border rounded-sm px-3 py-3" style='border-bottom-width:0'>List Item 4</li>
-  <li class="border rounded-sm px-3 py-3" >List Item 5</li>
-</ul>
+<h1 class="text-gray-700 font-bold text-2xl md:text-3xl leading-snug">Tailwind List group</h1>
+
+<hr class="border-t-2 border-b-0 border-gray-100 mt-2 mb-8">
+
+
+<h2 class="font-bold mb-4 text-gray-700 text-xl">Basic Lists</h2>
+<p class="my-4 leading-relaxed text-gray-700">Example of Bootstrap list group using tailwind css.</p>
+<div class="p-6 border rounded-t-lg">
+    <ul class="px-0">
+        <li class="border rounded-sm px-3 py-3" style='border-bottom-width:0'>List Item 1</li>
+        <li class="border rounded-sm px-3 py-3" style='border-bottom-width:0'>List Item 2</li>
+        <li class="border rounded-sm px-3 py-3" style='border-bottom-width:0'>List item 3</li>
+        <li class="border rounded-sm px-3 py-3" style='border-bottom-width:0'>List Item 4</li>
+        <li class="border rounded-sm px-3 py-3" >List Item 5</li>
+    </ul>
+</div>
 
 ```html
 <ul class="px-0">
@@ -18,16 +25,18 @@ Example of Bootstrap list group using tailwind css.
 </ul>
 ```
 
-## Active Items javascript behaviours
 
-Use alpine js to acheive active items javascript behavious
-<ul x-data="{ item: '1st' }" class="px-0">
-  <li class="border rounded-sm px-3 py-3" :class="{ 'bg-blue-600 text-gray-200': item === '1st' }" @click="item = '1st'" style='border-bottom-width:0'>List Item 1</li>
-  <li class="border rounded-sm px-3 py-3"  :class="{ 'bg-blue-600 text-gray-200': item === '2nd' }" @click="item = '2nd'" style='border-bottom-width:0'>List Item 2</li>
-  <li class="border rounded-sm px-3 py-3"  :class="{ 'bg-blue-600 text-gray-200': item === '3rd' }" @click="item = '3rd'" style='border-bottom-width:0'>List item 3</li>
-  <li class="border rounded-sm px-3 py-3"  :class="{ 'bg-blue-600 text-gray-200': item === '4th' }" @click="item = '4th'" style='border-bottom-width:0'>List Item 4</li>
-  <li class="border rounded-sm px-3 py-3"  :class="{ 'bg-blue-600 text-gray-200': item === '5th' }" @click="item = '5th'">List Item 5</li>
-</ul>
+<h2 class="font-bold mb-4 text-gray-700 text-xl mt-16">Lists active Items javascript behaviours using alpine js</h2>
+<p class="my-4 leading-relaxed text-gray-700">Use alpine js to acheive active items javascript behavious</p>
+<div class="p-6 border rounded-t-lg">
+    <ul x-data="{ item: '1st' }" class="px-0">
+        <li class="border rounded-sm px-3 py-3 cursor-pointer" :class="{ 'bg-blue-600 text-gray-200': item === '1st' }" @click="item = '1st'" style='border-bottom-width:0'>List Item 1</li>
+        <li class="border rounded-sm px-3 py-3 cursor-pointer"  :class="{ 'bg-blue-600 text-gray-200': item === '2nd' }" @click="item = '2nd'" style='border-bottom-width:0'>List Item 2</li>
+        <li class="border rounded-sm px-3 py-3 cursor-pointer"  :class="{ 'bg-blue-600 text-gray-200': item === '3rd' }" @click="item = '3rd'" style='border-bottom-width:0'>List item 3</li>
+        <li class="border rounded-sm px-3 py-3 cursor-pointer"  :class="{ 'bg-blue-600 text-gray-200': item === '4th' }" @click="item = '4th'" style='border-bottom-width:0'>List Item 4</li>
+        <li class="border rounded-sm px-3 py-3 cursor-pointer"  :class="{ 'bg-blue-600 text-gray-200': item === '5th' }" @click="item = '5th'">List Item 5</li>
+    </ul>
+</div>
 
 ```html
 <ul x-data="{ item: '1st' }" class="px-0">
@@ -41,13 +50,15 @@ Use alpine js to acheive active items javascript behavious
 
 ## Use with links
 Here is example about how to use with links.
-<ul class="px-0">
-  <a href="#"><li class="border rounded-sm px-3 py-3" style='border-bottom-width:0'>List Item 1</li></a>
-  <a href="#"><li class="border rounded-sm px-3 py-3" style='border-bottom-width:0'>List Item 2</li></a>
-  <a href="#"><li class="border rounded-sm px-3 py-3" style='border-bottom-width:0'>List item 3</li></a>
-  <a href="#"><li class="border rounded-sm px-3 py-3" style='border-bottom-width:0'>List Item 4</li></a>
-  <a href="#"><li class="border rounded-sm px-3 py-3" >List Item 5</li></a>
-</ul>
+<div class="html">
+    <ul class="px-0">
+    <a href="#"><li class="border rounded-sm px-3 py-3" style='border-bottom-width:0'>List Item 1</li></a>
+    <a href="#"><li class="border rounded-sm px-3 py-3" style='border-bottom-width:0'>List Item 2</li></a>
+    <a href="#"><li class="border rounded-sm px-3 py-3" style='border-bottom-width:0'>List item 3</li></a>
+    <a href="#"><li class="border rounded-sm px-3 py-3" style='border-bottom-width:0'>List Item 4</li></a>
+    <a href="#"><li class="border rounded-sm px-3 py-3" >List Item 5</li></a>
+    </ul>
+</div>
 
 ```html
 <ul class="px-0">
@@ -121,5 +132,6 @@ Company job listing example is presented here.
     </div>
 </div>
 ```
-
-<a class="float-right bg-blue-600 text-gray-200 hover:text-gray-100 rounded px-3 py-2" href="http://tailwindcomponent.com/editors/company-list-example-using-tailwind-css-8ee8e7434ed4">Try Your self</a>
+<div class="html text-center mt-16">
+    <a class="leading-tight bg-blue-600 hover:text-gray-100 text-gray-200 rounded px-6 py-3 text-sm" href="http://tailwindcomponent.com/editors/company-list-example-using-tailwind-css-8ee8e7434ed4">Try Your self</a>
+</div>

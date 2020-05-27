@@ -38,6 +38,30 @@
         color: #ca473f;
     }
 
+    h2 {
+        --text-opacity: 1;
+        margin-top: 4rem;
+        margin-bottom: 1rem;
+        font-size: 1.25rem;
+        font-weight: 700;
+        color: rgba(74, 85, 104, var(--text-opacity));
+    }
+
+    p {
+        --text-opacity: 1;
+        color: rgba(74, 85, 104, var(--text-opacity));
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        line-height: 1.625;
+    }
+
+    .html {
+        padding: 1.5rem;
+        border-width: 1px;
+        border-top-left-radius: .5rem;
+        border-top-right-radius: .5rem;
+    }
+
     @media screen and (min-width:768px) {
         #sidebar {
             top: 70px;
