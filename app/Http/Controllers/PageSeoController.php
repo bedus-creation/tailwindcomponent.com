@@ -21,7 +21,7 @@ class PageSeoController extends Controller
      */
     public function index()
     {
-        $pages = PageSeo::all();
+        $pages = PageSeo::orderBy('id', 'desc')->get();
         return view('admin.pageseo.index', compact('pages'));
     }
 
