@@ -5,7 +5,7 @@
 <h2 class="font-bold mb-4 text-gray-700 text-xl">Tailwind Three Columns Responsive example</h2>
 <p class="my-4 leading-relaxed text-gray-700">Here is the example of three column responsive website example using tailwind css. Use flex in the wrapper <b>div</b> and use tailwind class for width percent to achieve the columns in tailwind css.</p>
 <div class="p-4 border rounded-t-lg">
-    <div class="flex">
+    <div class="md:flex">
         <div class="w-full md:w-1/3 bg-green-200">First Column</div>
         <div class="w-full md:w-1/3 bg-green-400">second Column</div>
         <div class="w-full md:w-1/3 bg-green-200">Third Column</div>
@@ -14,7 +14,7 @@
 
 
 ```html
-<div class="flex">
+<div class="md:flex">
     <div class="w-full md:w-1/3 bg-green-200">First Column</div>
     <div class="w-full md:w-1/3 bg-green-400">second Column</div>
     <div class="w-full md:w-1/3 bg-green-200">Third Column</div>
@@ -26,18 +26,18 @@
 <p class="my-4 leading-relaxed text-gray-700">
 Use negative margin with flex in wrapper ```div``` tag and then apply margin to each components.</p>
 <div class="p-4 border rounded-t-lg">
-    <div class="flex -mx-4">
-        <div class="mx-4 w-1/3 bg-green-200">First Column</div>
-        <div class="mx-4 w-1/3 bg-green-400">Second Column</div>
-        <div class="mx-4 w-1/3 bg-green-200">First Column</div>
+    <div class="md:flex md:-mx-4">
+        <div class="w-full md:mx-4 md:w-1/3 bg-green-200">First Column</div>
+        <div class="w-full md:mx-4 md:w-1/3 bg-green-400">Second Column</div>
+        <div class="w-full md:mx-4 md:w-1/3 bg-green-200">First Column</div>
     </div>
 </div>
 
 ```html
-<div class="flex -mx-4">
-    <div class="mx-4 w-1/3 bg-green-200">First Column</div>
-    <div class="mx-4 w-1/3 bg-green-400">First Column</div>
-    <div class="mx-4 w-1/3 bg-green-200">First Column</div>
+<div class="md:flex md:-mx-4">
+    <div class="w-full px-4 md:mx-4 md:w-1/3 bg-green-200">First Column</div>
+    <div class="w-full px-4 md:mx-4 md:w-1/3 bg-green-400">Second Column</div>
+    <div class="w-full px-4 md:mx-4 md:w-1/3 bg-green-200">First Column</div>
 </div>
 ```
 
@@ -106,7 +106,7 @@ Use negative margin with flex in wrapper ```div``` tag and then apply margin to 
 </div>
 ```
 
-<h2 class="font-bold mb-4 text-gray-700 text-xl">Four Columns Responsive example with flex wrap.</h2>
+<h2 class="font-bold mb-4 text-gray-700 text-xl">Four Columns example with flex wrap.</h2>
 <p class="my-4 leading-relaxed text-gray-700">In the above example we have set width to 25% however it all the columns are set in one row. To go columns in next row use flex wrap.</p>
 <div class="p-6 border text-center rounded-t-lg">
     <div class="flex flex-wrap">
