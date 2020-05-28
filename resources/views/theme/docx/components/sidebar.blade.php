@@ -29,6 +29,9 @@
             <li class="py-1"><a class="leading-relaxed text-gray-600" href="{{url('/component/login-form')}}">Login
                     Form</a>
             </li>
+            <li class="py-1"><a class="leading-relaxed text-gray-600" href="{{url('/component/admin-theme')}}">Admin
+                    Theme</a>
+            </li>
         </ul>
     </div>
 </div>
