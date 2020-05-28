@@ -2,10 +2,7 @@
     <div
         class="container px-8 md:px-0 mx-auto flex justify-between whitespace-no-wrap overflow-x-auto overflow-y-hidden py-2">
         <a href="{{url('/')}}" class="flex items-center">
-            <img src="" class="w-10 h-10 rounded-full mr-12 md:mr-0">
-            <div class="px-2 hidden md:block">
-                tailwind component
-            </div>
+            <img src="/assets/img/logo.png" alt="web2tailwind.com logo" class="h-8 md:h-10 mr-12 md:mr-0">
         </a>
         <div class="flex">
             <div class="px-3 py-3">
