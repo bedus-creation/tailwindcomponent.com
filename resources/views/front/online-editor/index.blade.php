@@ -28,9 +28,8 @@
 @endsection
 
 @section('content')
-<div class="container mx-auto px-4 md:px-0">
-    @inertia
-</div>
+@include('theme.docx.components.navbar')
+@inertia
 @endsection
 
 @section('scripts')
