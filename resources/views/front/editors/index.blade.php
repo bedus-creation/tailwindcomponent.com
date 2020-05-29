@@ -27,7 +27,7 @@ Try Tailwind css Online
 @endsection
 
 @section('content')
-<div class="container mx-aut0">
+<div class="container mx-auto px-4 md:px-0">
     @inertia
 </div>
 @endsection
