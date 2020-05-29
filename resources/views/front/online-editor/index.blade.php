@@ -28,7 +28,9 @@
 @endsection
 
 @section('content')
-@inertia
+<div class="container mx-auto">
+    @inertia
+</div>
 @endsection
 
 @section('scripts')
