@@ -13,7 +13,7 @@
 
 
 <h2 class="font-bold mb-4 text-gray-700 mt-16 text-xl">Step 1: First add Tippy Js from CDN as follows</h2>
-<p class="my-4 leading-relaxed text-gray-700">You can also use npm and yarn to install tippy js. Please refer to tippy js websites for detail information. <a alt="Tippy Js Installtion Detail guides" href="https://atomiks.github.io/tippyjs/v6/getting-started/">Tippy Js Installtion Detail guides</a></p>
+<p class="my-4 leading-relaxed text-gray-700">You can use either cdn or npm and yarn to install tippy js. CDN for tooltips is given below, Please refer to tippy js websites for detail information. <a alt="Tippy Js Installtion Detail guides" href="https://atomiks.github.io/tippyjs/v6/getting-started/">Tippy Js Installtion Detail guides</a></p>
 
 ```html
 <!-- Development -->
