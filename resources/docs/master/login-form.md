@@ -8,7 +8,7 @@
         }
     }
 </style>
-<h2 class="font-bold mb-4 text-gray-700 text-xl">1. Tailwwind Login Form with background blur Image</h2>
+<h2 class="font-bold mb-4 text-gray-700 text-xl">1. Tailwind Login Form with background blur Image</h2>
 <p class="my-4 leading-relaxed text-gray-700">Here is the first Tailwind Login Form Example with background blur image. Try online editor to cutomize login form.</p>
 <div class="relative px-0" style="font-family:Roboto">
     <div id="blur-image" class="w-full md:h-screen py-4" style="filter: blur(6px); background-image:url('/assets/docs/master/image-01.jpg')"></div>
