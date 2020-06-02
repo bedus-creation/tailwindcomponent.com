@@ -2,8 +2,8 @@
 
 namespace Tests\Feature\Front;
 
+use App\PageSeo;
 use Illuminate\Foundation\Testing\RefreshDatabase;
-use Tests\Factories\ArticleFactory;
 use Tests\TestCase;
 
 class SitemapTest extends TestCase
@@ -13,7 +13,8 @@ class SitemapTest extends TestCase
     public function setUp(): void
     {
         parent::setUp();
-        ArticleFactory::new()->create();
+
+        PageSeo::create(['page_url' => 'component/alert']);
     }
 
     /** @test */
@@ -26,7 +27,7 @@ class SitemapTest extends TestCase
     /** @test */
     public function article_sitemap_returns_200_status()
     {
-        $this->get('/article-sitemap.xml')
+        $this->get('/component-sitemap.xml')
             ->assertStatus(200);
     }
 }
