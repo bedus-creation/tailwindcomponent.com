@@ -1,11 +1,18 @@
 <template>
   <div class="md:flex w-full h-screen">
-    <div id="drag-left" class="panel-code">
+    <div class="md:hidden p-6 border bg-white text-center rounded-t-lg mt-16">
+      <a
+        href="#"
+        @click.prevent="show=!show"
+        class="leading-tight bg-blue-600 hover:text-gray-100 text-gray-200 rounded px-6 py-3 text-sm"
+      >Show Code</a>
+    </div>
+    <div id="drag-left" class="panel-code md:block" :class="{'block':show, 'hidden':!show}">
       <codemirror id="_editor" :options="cmOption" v-model="code"></codemirror>
     </div>
     <div id="dragbar" class="hidden md:block dragbar"></div>
-    <div id="drag-right" class="panel-output md:px-10 my-10 md:my-0">
-      <iframe frameborder="0" scrolling="yes" class="w-full h-screen" :srcdoc="code"></iframe>
+    <div id="drag-right" class="panel-output bg-white md:px-10 my-2 py-20 md:py-0 md:my-0">
+      <iframe frameborder="0" scrolling="yes" class="w-full h-64 md:h-screen" :srcdoc="code"></iframe>
     </div>
     <action-button :code="code"></action-button>
   </div>
@@ -38,6 +45,7 @@ export default {
   data() {
     return {
       code: this.initcode,
+      show: false,
       cmOption: {
         tabSize: 4,
         styleActiveLine: true,
