@@ -1,6 +1,6 @@
 <template>
   <div class="md:flex w-full h-screen">
-    <div id="drag-left" class="panel-code h-screen">
+    <div id="drag-left" class="panel-code">
       <codemirror id="_editor" :options="cmOption" v-model="code"></codemirror>
     </div>
     <div id="dragbar" class="hidden md:block dragbar"></div>
@@ -65,7 +65,6 @@ export default {
 <style>
 .CodeMirror {
   font-family: "Source Code Pro", monospace;
-  height: 100vh !important;
   overflow-y: hidden;
 }
 .CodeMirror-vscrollbar {
@@ -90,6 +89,9 @@ p {
   }
 }
 @media screen and (min-width: 768px) {
+  .CodeMirror {
+    height: calc(100vh - 60px) !important;
+  }
   .drag-container {
     display: flex;
     min-height: 100vh;
