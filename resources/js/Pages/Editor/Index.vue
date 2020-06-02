@@ -12,7 +12,7 @@
     </div>
     <div id="dragbar" class="hidden md:block dragbar"></div>
     <div id="drag-right" class="panel-output bg-white md:px-10 my-2 py-20 md:py-0 md:my-0">
-      <iframe frameborder="0" scrolling="yes" class="w-full h-64 md:h-screen" :srcdoc="code"></iframe>
+      <iframe frameborder="0" scrolling="yes" class="w-full h-64 md:h-screen z-10" :srcdoc="code"></iframe>
     </div>
     <action-button :code="code"></action-button>
   </div>
