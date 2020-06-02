@@ -14,6 +14,9 @@
             </li>
             <li class="py-1"><a class="leading-relaxed text-gray-600" href="{{url('/component/column')}}">Column</a>
             </li>
+            <li class="py-1"><a class="leading-relaxed text-gray-600"
+                    href="{{url('/component/collapse-accordion')}}">Collapse</a>
+            </li>
             <li class="py-1">
                 <a class="leading-relaxed text-gray-600" href="{{url('/component/dropdown')}}">Dropdowns</a>
             </li>

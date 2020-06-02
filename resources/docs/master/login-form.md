@@ -79,3 +79,13 @@
 <div class="p-6 border rounded-t-lg text-center mt-16" style="font-family:Roboto">
     <a href="/editors/tailwind-login-form-green-aafe4d11b1d0" class="leading-tight bg-blue-600 hover:text-gray-100 text-gray-200 rounded px-6 py-3 text-sm">Try Online</a>
 </div>
+
+<h2 class="font-bold mb-4 text-gray-700 text-xl mt-16">3. Tailwind css Login Form with animated input and label.</h2>
+<p class="my-4 leading-relaxed text-gray-700">Third login form example by tailwindcss in which input and label are animated. </p>
+<div class="p-6 border rounded-t-lg mt-16 flex justify-center">
+    <img class="w-64" src="/assets/docs/master/image-13.gif">
+</div>
+
+<div class="p-6 border rounded-t-lg text-center mt-16" style="font-family:Roboto">
+    <a href="/editors/animated-login-form-7785514da14e" class="leading-tight bg-blue-600 hover:text-gray-100 text-gray-200 rounded px-6 py-3 text-sm">Try Online</a>
+</div>
