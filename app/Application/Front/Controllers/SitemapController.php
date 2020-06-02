@@ -3,6 +3,7 @@
 namespace App\Application\Front\Controllers;
 
 use App\Domain\CMS\Models\Article;
+use App\Editor;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\PageSeo;
@@ -12,8 +13,10 @@ class SitemapController extends Controller
     public function index()
     {
         $components = PageSeo::where('page_url', 'like', 'component/%')->latest()->first();
+        $design = Editor::where('status', 'Published')
+            ->latest()->first();
 
-        $content =  view('front.sitemap.index', compact('components'));
+        $content =  view('front.sitemap.index', compact('components', 'design'));
 
         return response($content, 200)
             ->header('content-Type', 'text/xml');
@@ -24,6 +27,16 @@ class SitemapController extends Controller
         $components = PageSeo::where('page_url', 'like', 'component/%')->latest()->get();
 
         $content =  view('front.sitemap.component', compact('components'));
+        return response($content, 200)
+            ->header('content-Type', 'text/xml');
+    }
+
+    public function design()
+    {
+        $designs = Editor::where('status', 'Published')
+            ->latest()->get();
+
+        $content =  view('front.sitemap.design', compact('designs'));
         return response($content, 200)
             ->header('content-Type', 'text/xml');
     }
