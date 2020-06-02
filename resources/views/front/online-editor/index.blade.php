@@ -29,7 +29,9 @@
 
 @section('content')
 @include('theme.docx.components.navbar')
-@inertia
+<div class="py-1 px-8 md:p-0">
+    @inertia
+</div>
 @endsection
 
 @section('scripts')
