@@ -12,7 +12,7 @@
     <script src="/assets/js/alpine.min.js" defer></script>
     <script src="/assets/js/highlight.min.js"></script>
     <link rel="stylesheet" href="/assets/css/dracula.min.css">
-    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src='/assets/lib/fontawesome/js/all.js'></script>
     <link
         href="https://fonts.googleapis.com/css?family=Manjari:wght@100;400;700|Source+Code+Pro&family=Fira+Sans:wght@300&display=swap"
         rel="stylesheet">

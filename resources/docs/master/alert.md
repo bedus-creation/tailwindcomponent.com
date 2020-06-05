@@ -121,3 +121,115 @@
     </div>
 </div>
 ```
+
+<h2 class="font-bold mb-4 text-gray-700 text-xl mt-16">Tailwind Alert with left side icons</h3>
+<p class="mt-4 mb-2 leading-relaxed text-gray-700">Tailwindcss alert with left side icons is presented here.</p>
+<div class="p-4 border rounded-t-lg bg-gray-300 flex justify-center">
+    <div x-data="{ show: true }" x-show="show" class="w-11/12 md:w-3/5 bg-white my-2 rounded-r-md px-6 border-l-4 -ml-4 border-blue-500">
+        <div class="flex items-center py-4">
+            <i class="fas fa-info-circle fill-current text-4xl text-gray-700"></i>
+            <div class="ml-5">
+                <h1 class="text-lg font-bold mb-2">Well done!</h1>
+                <p class="text-gray-700 my-0 leading-tight">You successfully read this important alert message.</p>
+            </div>
+            <div>
+                <button type="button" @click="show = false"  class=" text-yellow-700 outline-none">
+                    <span class="text-2xl">&times;</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+```html
+<div x-data="{ show: true }" x-show="show" class="w-11/12 md:w-3/5 bg-white my-2 rounded-r-md px-6 border-l-4 -ml-4 border-blue-500">
+    <div class="flex items-center py-4">
+        <i class="fas fa-info-circle fill-current text-4xl text-gray-700"></i>
+        <div class="ml-5">
+            <h1 class="text-lg font-bold">Well done!</h1>
+            <p class="text-gray-700 my-0">You made your awesome tailwind css alert.</p>
+        </div>
+        <div>
+            <button type="button" @click="show = false"  class=" text-yellow-700 outline-none">
+                <span class="text-2xl">&times;</span>
+            </button>
+        </div>
+    </div>
+</div>
+```
+
+<h2 class="font-bold mb-4 text-gray-700 text-xl mt-16">Tailwind success Alert with left side icons</h3>
+<p class="mt-4 mb-2 leading-relaxed text-gray-700">Tailwindcss success alert with left side icons is presented here.</p>
+<div class="p-4 border rounded-t-lg bg-gray-300 flex justify-center">
+    <div x-data="{ show: true }" x-show="show" class="w-11/12 md:w-3/5 bg-white my-2 rounded-r-md px-6 border-l-4 -ml-4 border-gray-100 bg-green-500">
+        <div class="flex items-center py-4">
+            <i class="fas fa-check border-2 border-gray-200 px-2 rounded-full fill-current text-4xl font-light text-gray-200"></i>
+            <div class="ml-5">
+                <h1 class="text-lg font-bold text-gray-200 mb-2">Well done!</h1>
+                <p class="text-gray-300 leading-tight my-0">You successfully read this important alert message.</p>
+            </div>
+            <div>
+                <button type="button"  @click="show = false"  class=" text-yellow-100">
+                    <span class="text-2xl">&times;</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+```html
+ <div x-data="{ show: true }" x-show="show" class="w-11/12 md:w-3/5 bg-white my-2 rounded-r-md px-6 border-l-4 -ml-4 border-gray-100 bg-green-500">
+    <div class="flex items-center py-4">
+        <i class="fas fa-check border-2 border-gray-200 px-2 rounded-full fill-current text-4xl font-light text-gray-200"></i>
+        <div class="ml-5">
+            <h1 class="text-lg font-bold text-gray-200">Well done!</h1>
+            <p class="text-gray-300 my-0">You successfully read this important alert message.</p>
+        </div>
+        <div>
+            <button type="button"  @click="show = false"  class=" text-yellow-100">
+                <span class="text-2xl">&times;</span>
+            </button>
+        </div>
+    </div>
+</div>
+```
+
+<h2 class="font-bold mb-4 text-gray-700 text-xl mt-16">Tailwind danger Alert with left side icons</h3>
+<p class="mt-4 mb-2 leading-relaxed text-gray-700">Tailwindcss danger alert with left side icons is presented here.</p>
+<div class="p-4 border rounded-t-lg bg-gray-300 flex justify-center">
+    <div x-data="{ show: true }" x-show="show" class="w-11/12 md:w-3/5 bg-white my-2 rounded-r-md px-6 border-l-4 -ml-4 border-gray-100 bg-yellow-400">
+        <div class="flex items-center py-4">
+            <i class="fas fa-exclamation-circle rounded-full fill-current text-4xl text-gray-800"></i>
+            <div class="ml-5">
+                <h1 class="font-bold text-gray-800 text-lg mb-2">Warning !!!</h1>
+                <p class="text-gray-800 leading-tight my-0">Warning! Better check yourself, you're not looking too good.</p>
+            </div>
+            <div>
+                <button type="button" @click="show = false"  class=" text-yellow-100">
+                    <span class="text-2xl text-gray-800">&times;</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+```html
+<div x-data="{ show: true }" x-show="show" class="w-11/12 md:w-3/5 bg-white my-2 rounded-r-md px-6 border-l-4 -ml-4 border-gray-100 bg-yellow-400">
+    <div class="flex items-center py-4">
+        <i class="fas fa-exclamation-circle rounded-full fill-current text-4xl text-gray-800"></i>
+        <div class="ml-5">
+            <h1 class="font-bold text-gray-800 text-lg">Warning !!!</h1>
+            <p class="text-gray-800 my-0 ">Warning! Better check yourself, you're not looking too good.</p>
+        </div>
+        <div>
+            <button type="button" @click="show = false"  class=" text-yellow-100">
+                <span class="text-2xl text-gray-800">&times;</span>
+            </button>
+        </div>
+    </div>
+</div>
+```
+
+<div class="p-6 border rounded-t-lg text-center mt-16" style="font-family:Roboto">
+    <a href="/editors/tailwind-css-alert-with-icons-on-left-605f0534917a" class="leading-tight bg-blue-600 hover:text-gray-100 text-gray-200 rounded px-6 py-3 text-sm">Try Online</a>
+</div>
