@@ -25,7 +25,7 @@
                         <td class="px-4 py-4">Bedram Tamang</td>
                         <td class="px-4 py-4">
                             <img class="h-6 w-6 rounded-full"
-                                src="http://tailwindcomponent.test/assets/docs/master/image-01.jpg">
+                                src="/assets/docs/master/image-01.jpg">
                         </td>
                         <td class="px-4 py-4">tmgbedu@gmail.com</td>
                         <td class="px-4 py-4">
@@ -41,7 +41,7 @@
                         <td class="px-4 py-4">Taylor Otwel</td>
                         <td class="px-4 py-4">
                             <img class="h-6 w-6 rounded-full"
-                                src="http://tailwindcomponent.test/assets/docs/master/image-01.jpg">
+                                src="/assets/docs/master/image-01.jpg">
                         </td>
                         <td class="px-4 py-4">taylow@laravel.com</td>
                         <td class="px-4 py-4">
@@ -57,7 +57,7 @@
                         <td class="px-4 py-4">Adam wathan</td>
                         <td class="px-4 py-4">
                             <img class="h-6 w-6 rounded-full"
-                                src="http://tailwindcomponent.test/assets/docs/master/image-01.jpg">
+                                src="/assets/docs/master/image-01.jpg">
                         </td>
                         <td class="px-4 py-4">tmgbedu@gmail.com</td>
                         <td class="px-4 py-4">
