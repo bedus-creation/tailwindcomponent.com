@@ -37,6 +37,8 @@
             </li>
             <li class="py-1"><a class="leading-relaxed text-gray-600" href="{{url('/component/tooltip')}}">Tooltips</a>
             </li>
+            <li class="py-1"><a class="leading-relaxed text-gray-600" href="{{url('/component/table')}}">Table</a>
+            </li>
             <li class="py-1"><a class="leading-relaxed text-gray-600" href="{{url('/component/admin-theme')}}">Admin
                     Theme</a>
             </li>

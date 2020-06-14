@@ -1,4 +1,4 @@
-<h1 class="text-gray-700 font-bold text-2xl md:text-3xl leading-snug"> Bootstrap Alert using Tailwind CSS </h1>
+<h1 class="text-gray-700 font-bold text-2xl md:text-3xl leading-snug">Tailwind Alert | Bootstrap Alert using Tailwind CSS </h1>
 
 <hr class="border-t-2 border-b-0 border-gray-100 mt-2 mb-8">
 
