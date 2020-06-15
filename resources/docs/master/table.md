@@ -292,5 +292,5 @@
     </div>
 </div>
 <div class="p-6 border rounded-t-lg text-center mt-16" style="font-family:Roboto">
-    <a href="editors/completely-dark-table-978a4d61fa0e" class="leading-tight bg-blue-600 hover:text-gray-100 text-gray-200 rounded px-6 py-3 text-sm">Try Online</a>
+    <a href="/editors/completely-dark-table-978a4d61fa0e" class="leading-tight bg-blue-600 hover:text-gray-100 text-gray-200 rounded px-6 py-3 text-sm">Try Online</a>
 </div>
