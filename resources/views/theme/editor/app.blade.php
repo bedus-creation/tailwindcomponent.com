@@ -18,7 +18,7 @@
 
 <body style="font-family:Roboto">
     @yield('content')
-    <script src="{{url(mix('dist/js/app.js'))}}"></script>
+    <script src="{{url(mix('dist/js/intertia.js'))}}"></script>
     @yield('scripts')
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106586554-6"></script>
     <script>

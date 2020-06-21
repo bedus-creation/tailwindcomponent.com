@@ -2,6 +2,7 @@
 
 namespace App\Application\Admin\Controllers;
 
+use Aammui\LaravelTaggable\Models\Category;
 use App\Application\Admin\Requests\ArticleStoreRequest;
 use App\Domain\CMS\Models\Article;
 use Illuminate\Http\Request;
@@ -16,9 +17,40 @@ class ArticleController extends Controller
         $this->repository = $article;
     }
 
+    public function index()
+    {
+        $articles = $this->repository->all();
+        return view('admin.articles.index', compact('articles'));
+    }
+
+    public function create(Request $request)
+    {
+        $categories = Category::all();
+        return view('admin.articles.create', compact('categories'));
+    }
+
     public function store(ArticleStoreRequest $articleStoreRequest)
     {
-        $this->repository->create($articleStoreRequest->all());
+        $article = $this->repository->create($articleStoreRequest->all());
+        if ($articleStoreRequest->image) {
+            $article->toCollection('cover')
+                ->toDisk('public')
+                ->addMedia(request()->image);
+        }
         return redirect()->back()->with('success', 'Article has been created.');
+    }
+
+    /**
+     * Delete article resource
+     *
+     * @param Request $request
+     * @param int $id
+     * @return void
+     */
+    public function destroy(Request $request, $id)
+    {
+        $article = $this->repository->findOrFail($id);
+        $article->delete();
+        return redirect()->back()->with('success', 'Article has been deleted.');
     }
 }

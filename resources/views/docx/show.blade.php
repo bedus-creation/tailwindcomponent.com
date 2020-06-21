@@ -1,7 +1,7 @@
 @extends('theme.docx.app')
 
 @section('title')
-{{$pageseo->page_title}} | Tailwind Component
+{{$pageseo->page_title}} | web2tailwind
 @endsection
 
 @section('meta')

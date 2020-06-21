@@ -1,6 +1,12 @@
 <?php
 
 use App\Application\Admin\Controllers\ArticleController;
+use App\Application\Admin\Controllers\CategoriesController;
+use App\Application\Admin\Controllers\DashboardController;
+use App\Application\Admin\Controllers\RolesController;
+use App\Application\Admin\Controllers\TagsController;
+use App\Application\Admin\Controllers\UsersController;
+use App\Application\CMS\Controllers\PageController;
 use App\Domain\User\Enums\Role;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PageSeoController;
@@ -16,6 +22,15 @@ Route::resource('docs', DocsWriterController::class)->only(['index']);
 Route::resource('admin/pageseo', PageSeoController::class);
 Route::resource('admin/editors', EditorController::class)->only(['index', 'store', 'edit', 'update']);
 
-Route::group(['prefix' => 'admin', 'middleware' => ['role:' . Role::ADMIN]], function () {
+Route::group(['prefix' => 'admin', 'middleware' => ['role:' . Role::ADMIN . '|' . Role::SYSTEM_ADMIN]], function () {
+    Route::resource('/', DashboardController::class);
     Route::resource('articles', ArticleController::class);
+    Route::resource('categories', CategoriesController::class);
+    Route::resource('tags', TagsController::class);
+    Route::resource('users', UsersController::class)->except(['edit', 'update']);
+    Route::resource('roles', RolesController::class);
+});
+
+Route::group(['prefix' => 'admin'], function () {
+    Route::resource('pages', PageController::class);
 });

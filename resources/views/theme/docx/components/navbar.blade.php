@@ -1,4 +1,5 @@
 <div class="bg-white border-b-2 border-red-500 sticky top-0 z-10">
+    @include('theme.docx.components.laratail')
     <div
         class="container px-8 md:px-0 mx-auto flex justify-between whitespace-no-wrap overflow-x-auto overflow-y-hidden py-2">
         <a href="{{url('/')}}" class="flex items-center">

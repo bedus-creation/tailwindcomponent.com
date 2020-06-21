@@ -1,25 +1,10 @@
-import { InertiaApp } from '@inertiajs/inertia-vue'
-import Vue from 'vue'
+import Vue from 'vue';
+window._ = require("lodash");
 
-Vue.use(InertiaApp)
+require('@/utils/flash.js');
+Vue.component('FileInput', () => import('@/components/FileInput'));
 
-// Components Registration
-// Vue.component('EditorPage', () => import('./components/EditorPage'));
-Vue.component('DesignCreateForm', () => import('./components/DesignCreateForm'));
-Vue.component('ActionButton', () => import('./components/ActionButton'));
-Vue.component('ActionButton', () => import('./components/ActionButton'));
+const app = new Vue({
+    el: '#app',
+});
 
-// Use Toastify
-import VueToastify from "vue-toastify";
-Vue.use(VueToastify);
-
-const app = document.getElementById('app')
-
-new Vue({
-    render: h => h(InertiaApp, {
-        props: {
-            initialPage: JSON.parse(app.dataset.page),
-            resolveComponent: name => import(`./Pages/${name}`).then(module => module.default),
-        },
-    }),
-}).$mount(app)

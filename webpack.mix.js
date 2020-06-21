@@ -14,5 +14,6 @@ mix.webpackConfig({
 });
 
 mix.js('resources/js/app.js', 'public/dist/js')
+    .js('resources/js/intertia.js', 'public/dist/js')
     .styles(['resources/sass/app.css'], 'public/dist/css/app.css')
     .version();
