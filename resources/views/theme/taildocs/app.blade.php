@@ -25,6 +25,7 @@
     }
 
     p,
+    li,
     h1,
     h2,
     h3,
@@ -61,6 +62,18 @@
         border-width: 1px;
         border-top-left-radius: .5rem;
         border-top-right-radius: .5rem;
+    }
+
+
+    #content ul {
+        list-style-type: disc;
+    }
+
+    #content li {
+        --text-opacity: 1;
+        color: #4a5568;
+        color: rgba(74, 85, 104, var(--text-opacity));
+        line-height: 1.625;
     }
 
     @media screen and (min-width:768px) {

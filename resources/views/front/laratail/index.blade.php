@@ -28,5 +28,7 @@
 @endsection
 
 @section('content')
-{!! parseMarkdown($page->description) !!}
+<div id="content">
+    {!! parseMarkdown($page->description) !!}
+</div>
 @endsection

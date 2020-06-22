@@ -28,5 +28,7 @@
 @endsection
 
 @section('content')
-{!!$content!!}
+<div id="content">
+    {!!$content!!}
+</div>
 @endsection
