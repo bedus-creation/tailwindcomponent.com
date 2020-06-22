@@ -69,6 +69,10 @@
         list-style-type: disc;
     }
 
+    #content ol {
+        list-style-type: decimal;
+    }
+
     #content li {
         --text-opacity: 1;
         color: #4a5568;
