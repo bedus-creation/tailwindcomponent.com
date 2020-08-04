@@ -1,5 +1,9 @@
 @extends('theme.docx.app')
 
+@section('sidebar')
+@include('theme.docx.components.sidebar')
+@endsection
+
 @section('title')
 {{$pageseo->page_title}} | web2tailwind
 @endsection

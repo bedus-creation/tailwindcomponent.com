@@ -92,7 +92,7 @@
         @include('theme.docx.components.navbar')
         <div class="md:flex">
             <div class="bg-gray-100 w-full md:w-1/5">
-                @include('theme.docx.components.sidebar')
+                @yield('sidebar')
             </div>
             <div class="w-full md:w-3/5">
                 <div class="px-8 py-10">

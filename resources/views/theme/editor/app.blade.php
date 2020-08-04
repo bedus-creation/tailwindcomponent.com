@@ -11,12 +11,13 @@
     <script src="/assets/lib/codemirror-5.53.2/lib/codemirror.js"></script>
     <link rel="stylesheet" href="/assets/lib/codemirror-5.53.2/lib/codemirror.css">
     <script src="/assets/lib/codemirror-5.53.2/mode/javascript/javascript.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Source+Code+Pro|Roboto&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="{{url(mix('dist/css/app.css'))}}">
     @yield('meta')
 </head>
 
-<body style="font-family:Roboto">
+<body style="font-family:Roboto;overflow:hidden">
     @yield('content')
     <script src="{{url(mix('dist/js/intertia.js'))}}"></script>
     @yield('scripts')

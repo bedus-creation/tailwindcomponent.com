@@ -10,7 +10,7 @@ class Editor extends Model
 {
     use HasMedia;
 
-    protected $fillable = ['slug', 'title', 'description', 'code', 'status'];
+    protected $fillable = ['user_id', 'slug', 'title', 'description', 'code', 'status'];
 
     /**
      * Get the route key for the model.

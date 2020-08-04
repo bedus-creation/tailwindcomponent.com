@@ -2,10 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Application\Front\Requests\EditorStoreRequest;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 use App\Editor;
 use App\PageSeo;
+use App\User;
 use Illuminate\Support\Facades\Redirect;
 use Inertia\Inertia;
 
@@ -45,13 +47,30 @@ class EditorController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(EditorStoreRequest $request)
     {
-        $request->merge([
-            'slug' => 'editors/' . Str::slug($request->title) . '-' . substr(md5(now()->timestamp), 0, 12)
-        ]);
-        $editor = $this->repository->create($request->all());
-        return Redirect::to($editor->link(), 303);
+        // Case I: If user not login,
+        if (!auth()->check()) {
+            $user = User::where(['email' => $request->email])->first();
+            if (!$user) {
+                //  Case II: If user doesn't exists in database
+                $user  = User::create(['email' => $request->email, 'password' => bcrypt('password'), 'name' => "Guest"]);
+            }
+            auth()->login($user); // Login User
+        }
+        $resource = $this->repository->where(['user_id' => auth()->id(), 'slug' => $request->slug])->first();
+        // Case I: If resource is own by authenticated user, Update resource
+        if ($resource) {
+            $resource->update($request->all());
+        } else {
+            // Case I: If current resource don't own by auth user then create new resource
+            $request->merge([
+                'user_id' => auth()->id(),
+                'slug' => 'editors/' . Str::slug($request->title) . '-' . substr(md5(now()->timestamp), 0, 12)
+            ]);
+            $resource = $this->repository->create($request->all());
+        }
+        return response()->json(['link' => url($resource->link())]);
     }
 
     /**
@@ -68,7 +87,8 @@ class EditorController extends Controller
         Inertia::setRootView('front.online-editor.index');
 
         return Inertia::render('Editor/Index', [
-            'initcode' => $editor->code
+            'initcode' => $editor->code,
+            'url' => $editor->slug
         ])->withViewData(['pageseo' => $pageseo, 'editor' => $editor]);
     }
 

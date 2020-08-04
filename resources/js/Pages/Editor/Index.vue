@@ -1,87 +1,64 @@
 <template>
-  <div class="md:flex w-full h-screen">
-    <div class="md:hidden p-6 border bg-white text-center rounded-t-lg mt-16">
-      <a
-        href="#"
-        @click.prevent="show=!show"
-        class="leading-tight bg-blue-600 hover:text-gray-100 text-gray-200 rounded px-6 py-3 text-sm"
-      >Show Code</a>
+  <div class="flex">
+    <div class="w-20" style="background-color:#2d3748;min-width:5rem;">
+      <sidebar @run="execute"></sidebar>
     </div>
-    <div id="drag-left" class="panel-code md:block" :class="{'block':show, 'hidden':!show}">
-      <codemirror id="_editor" :options="cmOption" v-model="code"></codemirror>
+    <div class="flex-1">
+      <div class="md:flex w-full h-screen">
+        <editor-manaco
+          v-model="code"
+          class="w-full h-screen panel-code"
+          :class="editor? 'hidden lg:block':'block lg:hidden'"
+        ></editor-manaco>
+        <iframe
+          id="html"
+          frameborder="0"
+          scrolling="yes"
+          class="w-full bg-white text-gray-700 h-screen z-10 shadow-lg"
+          :class="editor ? 'block lg:hidden':'hidden lg:block'"
+          :srcdoc="code"
+        ></iframe>
+        <action-button :code="code"></action-button>
+      </div>
     </div>
-    <div id="dragbar" class="hidden md:block dragbar"></div>
-    <div id="drag-right" class="panel-output bg-white md:px-10 my-2 py-20 md:py-0 md:my-0">
-      <iframe frameborder="0" scrolling="yes" class="w-full h-64 md:h-screen z-10" :srcdoc="code"></iframe>
-    </div>
-    <action-button :code="code"></action-button>
   </div>
 </template>
 <script>
 import { codemirror } from "vue-codemirror";
+import EditorManaco from "@/components/EditorManaco";
+import Sidebar from "@/components/Sidebar";
 import "codemirror/theme/dracula.css";
 export default {
   props: ["initcode"],
   mounted() {
-    var left = document.getElementById("drag-left");
-    var right = document.getElementById("drag-right");
-    var bar = document.getElementById("dragbar");
-
-    const drag = e => {
-      document.selection
-        ? document.selection.empty()
-        : window.getSelection().removeAllRanges();
-      left.style.width = e.pageX - bar.offsetWidth / 2 + "px";
-    };
-
-    bar.addEventListener("mousedown", () => {
-      document.addEventListener("mousemove", drag);
-    });
-
-    bar.addEventListener("mouseup", () => {
-      document.removeEventListener("mousemove", drag);
+    let vm = this;
+    document.addEventListener("keydown", function(event) {
+      if (event.ctrlKey && event.keyCode == 66) {
+        vm.execute();
+      }
     });
   },
   data() {
     return {
       code: this.initcode,
       show: false,
-      cmOption: {
-        tabSize: 4,
-        styleActiveLine: true,
-        lineNumbers: true,
-        line: true,
-        foldGutter: true,
-        styleSelectedText: true,
-        mode: "text/javascript",
-        matchBrackets: true,
-        showCursorWhenSelecting: true,
-        theme: "dracula",
-        extraKeys: { Ctrl: "autocomplete" },
-        hintOptions: {
-          completeSingle: false
-        }
-      }
+      editor: true
     };
   },
   components: {
-    codemirror
+    codemirror,
+    Sidebar,
+    EditorManaco
+  },
+  methods: {
+    execute: function() {
+      this.editor = !this.editor;
+    }
   }
 };
 </script>
 
 <style>
-.CodeMirror {
-  font-family: "Source Code Pro", monospace;
-  overflow-y: hidden;
-}
-.CodeMirror-vscrollbar {
-  overflow-y: hidden !important;
-}
-* {
-  box-sizing: border-box;
-}
-
 p {
   color: darkslategray;
 }

@@ -28,8 +28,7 @@
 @endsection
 
 @section('content')
-@include('theme.docx.components.navbar')
-<div class="py-1 bg-gray-100 px-8 md:p-0">
+<div class="bg-gray-100 md:p-0">
     @inertia
 </div>
 @endsection

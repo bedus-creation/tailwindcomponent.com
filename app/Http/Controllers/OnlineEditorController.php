@@ -12,7 +12,10 @@ class OnlineEditorController extends Controller
         Inertia::setRootView('front.online-editor.index');
 
         return Inertia::render('Editor/Index', [
-            'initcode' => file_get_contents(resource_path('views/front/online-editor/code/tailwind.html'))
-        ])->withViewData(['pageseo' => optional(), 'editor' => optional()]);;
+            'initcode' => file_get_contents(resource_path('views/front/online-editor/code/tailwind.html')),
+            'url' => url('tailwind/try')
+        ])->withViewData([
+            'pageseo' => optional(), 'editor' => optional(),
+        ]);;
     }
 }
