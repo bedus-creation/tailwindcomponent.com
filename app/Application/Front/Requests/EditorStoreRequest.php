@@ -24,8 +24,8 @@ class EditorStoreRequest extends FormRequest
     public function rules()
     {
         return [
-            'title' => 'required'
-            // 'email' => 'required|email'
+            'title' => 'required',
+            'email' => 'required|email'
         ];
     }
 }

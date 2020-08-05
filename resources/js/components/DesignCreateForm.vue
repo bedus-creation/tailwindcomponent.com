@@ -10,7 +10,7 @@
       <textarea v-model="form.description" class="px-3 w-full border rounded" rows="4"></textarea>
     </div>
 
-    <div v-if="!$page.auth" class="mb-2">
+    <div class="mb-2">
       <label class="text-gray-700 font-light">Your Email</label>
       <input
         v-model="form.email"

@@ -33,9 +33,7 @@ class AppServiceProvider extends ServiceProvider
         Inertia::share('auth.user', function () {
             if (Auth::user()) {
                 return [
-                    'id' => Auth::user()->id,
-                    'first_name' => Auth::user()->first_name,
-                    'last_name' => Auth::user()->last_name,
+                    'email' => Auth::user()->email,
                 ];
             }
         });
