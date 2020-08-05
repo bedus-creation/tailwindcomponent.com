@@ -7,11 +7,11 @@
 <p class="my-4 leading-relaxed text-gray-700">Example of Bootstrap list group using tailwind css.</p>
 <div class="p-6 border rounded-t-lg">
     <ul class="px-0">
-        <li class="border rounded-sm px-3 py-3" style='border-bottom-width:0'>List Item 1</li>
-        <li class="border rounded-sm px-3 py-3" style='border-bottom-width:0'>List Item 2</li>
-        <li class="border rounded-sm px-3 py-3" style='border-bottom-width:0'>List item 3</li>
-        <li class="border rounded-sm px-3 py-3" style='border-bottom-width:0'>List Item 4</li>
-        <li class="border rounded-sm px-3 py-3" >List Item 5</li>
+        <li class="border list-none rounded-sm px-3 py-3" style='border-bottom-width:0'>List Item 1</li>
+        <li class="border list-none rounded-sm px-3 py-3" style='border-bottom-width:0'>List Item 2</li>
+        <li class="border list-none rounded-sm px-3 py-3" style='border-bottom-width:0'>List item 3</li>
+        <li class="border list-none rounded-sm px-3 py-3" style='border-bottom-width:0'>List Item 4</li>
+        <li class="border list-none rounded-sm px-3 py-3" >List Item 5</li>
     </ul>
 </div>
 

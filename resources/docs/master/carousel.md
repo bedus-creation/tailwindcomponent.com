@@ -1,4 +1,4 @@
-<h1 class="text-gray-700 font-bold text-2xl md:text-3xl leading-snug">Tailwind Carousel Example with Slider Js</h1>
+<h1 class="text-gray-700 font-bold text-2xl md:text-3xl leading-snug">Tailwind Carousel Example with Swiper Js</h1>
 
 <hr class="border-t-2 border-b-0 border-gray-100 mt-2 mb-8">
 
@@ -11,12 +11,15 @@
     <a href="/editors/slider-example-in-tailwind-css-c8667624be30" class="leading-tight bg-blue-600 hover:text-gray-100 text-gray-200 rounded px-6 py-3 text-sm">Try Carousel Online</a>
  </div>
 
-<h2 class="font-bold mb-4 text-gray-700 text-xl mt-16">Step 1: Add Slider js From cdn.</h3>
+<h2 class="font-bold mb-4 text-gray-700 text-xl mt-16">Step 1: Add Swiper js From cdn.</h3>
 <p class="my-4 leading-relaxed text-gray-700">Cdn is a fast way to test library with out downloading into your disks. You may download and use from your local computer if you require.</p>
 
 ```html
-<script src="https://unpkg.com/swiper/js/swiper.js"></script>
-<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 ```
 
 
