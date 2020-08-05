@@ -8,7 +8,7 @@
 <img class="w-full" alt="Basic Carousel" src="/assets/docs/master/image-03.gif">
 
 <div class="p-6 border rounded-t-lg text-center mt-16" style="font-family:Roboto">
-    <a href="/editors/slider-example-in-tailwind-css-c8667624be30" class="leading-tight bg-blue-600 hover:text-gray-100 text-gray-200 rounded px-6 py-3 text-sm">Try Carousel Online</a>
+    <a href="/editors/slider-example-in-tailwind-css-97bd326daa4b" class="leading-tight bg-blue-600 hover:text-gray-100 text-gray-200 rounded px-6 py-3 text-sm">Try Carousel Online</a>
  </div>
 
 <h2 class="font-bold mb-4 text-gray-700 text-xl mt-16">Step 1: Add Swiper js From cdn.</h3>
@@ -51,7 +51,7 @@
 ```
 
 <div class="p-6 border rounded-t-lg text-center mt-16" style="font-family:Roboto">
-    <a href="/editors/slider-basic-examples-2c54ab5eb739" class="leading-tight bg-blue-600 hover:text-gray-100 text-gray-200 rounded px-6 py-3 text-sm">Try Basic Carousel Online</a>
+    <a href="/editors/slider-basic-example-999f7e61c81b" class="leading-tight bg-blue-600 hover:text-gray-100 text-gray-200 rounded px-6 py-3 text-sm">Try Basic Carousel Online</a>
  </div>
 
 
@@ -59,5 +59,5 @@
 <img class="w-full mt-16" alt="Basic Carousel" src="/assets/docs/master/image-04.gif">
 
 <div class="p-6 border rounded-t-lg text-center mt-16" style="font-family:Roboto">
-    <a href="/editors/carousel-tailwind-css-swiper-js-customers-testimonials-examples-b7792af93ee9" class="leading-tight bg-blue-600 hover:text-gray-100 text-gray-200 rounded px-6 py-3 text-sm">Try Online</a>
+    <a href="/editors/carousel-tailwind-css-14f29f115e1c" class="leading-tight bg-blue-600 hover:text-gray-100 text-gray-200 rounded px-6 py-3 text-sm">Try Online</a>
  </div>
