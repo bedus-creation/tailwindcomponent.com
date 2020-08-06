@@ -13,6 +13,7 @@ use Inertia\Inertia;
 
 class EditorController extends Controller
 {
+
     protected $repository;
 
     public function __construct(Editor $repository)
