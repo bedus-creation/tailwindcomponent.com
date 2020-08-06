@@ -29,20 +29,31 @@ Tailwind Css layout and template design examples.
 @section('content')
 <div class="md:flex flex-wrap -mx-4">
     @foreach($design as $item)
-    <div class="w-full mb-2 md:w-1/3 px-4">
-        <a target="_blank" href="{{$item->link()}}" class="mb-4">
-            <img class="rounded w-full" src="{{url(optional($item->pageseo)->cover ?? ' ')}}">
-        </a>
-        <div class="px-4 py-4">
-            <div class="mb-2">
-                <a target="_blank" href="{{$item->link()}}"
-                    class="font-semibold leading-tight text-2xl text-gray-800 hover:text-gray-800">
-                    {{ucfirst($item->title)}}
-                </a>
-            </div>
-            <div class='flex text-gray-700 text-sm '>
-                <div class="pr-3">{{$item->created_at->format('d M, Y')}}</div>
-                <div>Posted by <span class="text-red-400">Admin</span></div>
+    <div class="w-full mb-2 px-4 md:w-1/3">
+        <div class="h-full rounded-lg" style="background-color:hsl(0, 0%, 100%);">
+            <a target="_blank" href="{{$item->link()}}" class="mb-4">
+                <div class="rounded w-full h-40"
+                    style="background: url({{url(optional($item->pageseo)->cover ?? ' ')}}); background-size:cover !important; background-position:center !important">
+                </div>
+            </a>
+            <div class="px-4 py-4">
+                <div class="mb-2">
+                    <a target="_blank" href="{{$item->link()}}"
+                        class="font-semibold leading-tight text-xl text-gray-800 hover:text-gray-800">
+                        {{ucfirst($item->title)}}
+                    </a>
+                </div>
+                <div class="flex items-center justify-between my-4">
+                    <div class="w-16">
+                        <img class="border border-gray-900 p-2 w-12 h-12 rounded-full" src="/assets/img/icon.png"
+                            style="border-width:1px !important;">
+                    </div>
+                    <div class="flex-1">
+                        <div class="text-gray-700 font-semibold">
+                            Web2tailwind.com
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

@@ -39,7 +39,7 @@
 <body>
     <div id="app">
         @include('theme.docx.components.navbar')
-        <div class="md:flex">
+        <div class="md:flex" style="background-color:hsl(0, 0%, 98%);">
             <div class="bg-gray-100 w-full md:w-1/5">
                 @include('theme.docx.components.sidebar')
             </div>
