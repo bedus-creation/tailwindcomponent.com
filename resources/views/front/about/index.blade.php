@@ -12,8 +12,8 @@
     - Bedram Tamang
 </p>
 <h2 class="mt-16 mb-4 text-gray-700 font-bold text-2xl md:text-2xl leading-snug">Team</h2>
-<div class="flex -mx-2">
-    <div class="w-1/3 px-1">
+<div class="lg:flex -mx-2">
+    <div class="lg:w-1/3 px-1 mb-2 lg:mb-0">
         <div class="bg-white rounded-lg py-4">
             <div class="flex justify-center mb-2">
                 <img class="rounded-full w-20 h-20" src="/assets/img/bedram-tamang.png">
@@ -41,7 +41,7 @@
             </div>
         </div>
     </div>
-    <div class="w-1/3 px-1">
+    <div class="lg:w-1/3 px-1 mb-2 lg:mb-0">
         <div class="bg-white rounded-lg py-4">
             <div class="flex justify-center mb-2">
                 <img class="rounded-full w-20 h-20" src="/assets/img/bhola-khawas.jpg">
