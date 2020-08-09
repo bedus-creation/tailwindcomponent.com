@@ -15,6 +15,7 @@
     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/markdown.css">
     @yield('meta')
+    @yield('css')
 </head>
 <style>
     body {

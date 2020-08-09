@@ -12,5 +12,5 @@ Route::get('/design-sitemap.xml', [SitemapController::class, 'design']);
 Route::get('/about-us', [PageController::class, 'about'])->name('about');
 Route::get('/contact-us', [PageController::class, 'contact'])->name('contact');
 Route::get('/copyright', [PageController::class, 'copyright'])->name('copyright');
-Route::get('/disclaimer', [PageController::class, 'disclaimer'])->name('disclaimer');
+Route::get('/code-of-conduct', [PageController::class, 'code'])->name('code');
 Route::get('/privacy-and-policy', [PageController::class, 'privacy'])->name('privacy');
