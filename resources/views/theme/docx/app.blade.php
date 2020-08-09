@@ -98,6 +98,7 @@
                 <div class="px-8 py-10">
                     @yield('content')
                 </div>
+                @include('theme.front.components.footer')
             </div>
         </div>
     </div>
@@ -112,8 +113,10 @@
 
         gtag('config', 'UA-106586554-6');
     </script>
-    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
-    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
         var mySwiper = new Swiper('.swiper-container', {
           // Optional parameters

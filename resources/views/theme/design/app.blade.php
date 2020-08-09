@@ -43,10 +43,11 @@
             <div class="bg-gray-100 w-full md:w-1/5">
                 @include('theme.docx.components.sidebar')
             </div>
-            <div class="w-full md:w-4/5">
+            <div class="w-full md:w-3/5">
                 <div class="px-8 py-10">
                     @yield('content')
                 </div>
+                @include('theme.front.components.footer')
             </div>
         </div>
     </div>
