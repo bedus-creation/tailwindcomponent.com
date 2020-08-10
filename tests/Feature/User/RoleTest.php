@@ -5,6 +5,7 @@ namespace Tests\Feature\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\Factories\UserFactory;
 use App\Domain\User\Enums\Role;
+use Illuminate\Support\Facades\Http;
 use Tests\TestCase;
 
 class RoleTest extends TestCase
