@@ -1,7 +1,18 @@
 <div id="sidebar" class="md:fixed w-full md:w-1/5 overflow-y-scroll">
-    <div class="px-8 pb-10">
-        <h2 class="text-lg font-semibold mt-3 md:mt-12 mb-2 py-3">Components</h2>
-        <ul class="px-1 my-0">
+    <div x-data="{show:false}" class="px-8 lg:pb-10">
+        <div class="flex justify-between items-center">
+            <div>
+                <h2 class="text-lg font-semibold mt-3 md:mt-12 mb-2 py-3">Components</h2>
+            </div>
+            <div class="block lg:hidden">
+                <button x-on:click="show=!show" class="flex items-center text-gray-700">
+                    <span class="material-icons">
+                        view_module
+                    </span>
+                </button>
+            </div>
+        </div>
+        <ul class="px-1 my-0" :class="{'block':show,'hidden lg:block':!show}">
             <li class="py-1">
                 <a class="leading-relaxed text-gray-600" href="{{url('/component/introduction')}}">Introduction</a>
             </li>

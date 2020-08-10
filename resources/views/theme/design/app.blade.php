@@ -12,7 +12,8 @@
     <script src="/assets/js/alpine.min.js" defer></script>
     <script src="/assets/js/highlight.min.js"></script>
     <link rel="stylesheet" href="/assets/css/dracula.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Source+Code+Pro|Roboto&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/markdown.css">
     @yield('meta')
     @yield('css')
@@ -45,7 +46,7 @@
                 @include('theme.docx.components.sidebar')
             </div>
             <div class="w-full md:w-4/5">
-                <div class="px-8 py-10">
+                <div class="px-8 lg:py-10">
                     @yield('content')
                 </div>
                 @include('theme.front.components.footer')
