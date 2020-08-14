@@ -89,3 +89,30 @@
 <div class="p-6 border rounded-t-lg text-center mt-16" style="font-family:Roboto">
     <a href="/editors/animated-login-form-7785514da14e" class="leading-tight bg-blue-600 hover:text-gray-100 text-gray-200 rounded px-6 py-3 text-sm">Try Online</a>
 </div>
+
+<h2 class="font-bold mb-4 text-gray-700 text-xl mt-16">4. Facebook Login Form clone in Tailwindcss.</h2>
+<p class="my-4 leading-relaxed text-gray-700">Fourth login form is the facebook login form clone in tailwind css. Click on edit link to edit try online.</p>
+
+<div class="bg-gray-300 p-6 border rounded-t-lg mt-16 flex justify-center" style="font-family:Roboto">
+    <div class="bg-white w-2/3 mx-auto rounded-lg my-20 px-4 py-4 shadow-lg">
+		<input type='text' placeholder="Email or Phone Number"
+            class="w-full mb-3 px-4 py-3 border rounded-lg text-gray-700 focus:outline-none focus:border-green-500" />
+		<input type='text' placeholder="Password"
+            class="w-full mb-3 px-4 py-3 border rounded-lg text-gray-700 focus:outline-none focus:border-green-500" />
+		<button class="text-white py-3 rounded-lg w-full font-bold text-xl tracking-wider"
+            style="background-color:#1977f2;">Log
+            In</button>
+		<div class="flex justify-center my-4">
+			<a class="text-blue-500 text-sm" href="#">Forgot account?</a>
+		</div>
+		<hr class="">
+		<div class="flex justify-center my-6">
+			<button class="text-white h-12 rounded px-6 font-bold" style="background-color:#54b72b">Create
+                new Account </button>
+		</div>
+	</div>
+</div>
+
+<div class="p-6 border rounded-t-lg text-center mt-16" style="font-family:Roboto">
+    <a href="/editors/facebook-login-page-dda40c922f34" class="leading-tight bg-blue-600 hover:text-gray-100 text-gray-200 rounded px-6 py-3 text-sm">Try Online</a>
+</div>

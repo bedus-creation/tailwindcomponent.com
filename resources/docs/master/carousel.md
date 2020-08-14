@@ -55,6 +55,7 @@
  </div>
 
 
+
 <h2 class="font-bold mb-4 text-gray-700 text-xl mt-16">Customer Feedback/Happy Client Carousel style with tailwind css.</h3>
 <img class="w-full mt-16" alt="Basic Carousel" src="/assets/docs/master/image-04.gif">
 
