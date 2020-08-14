@@ -54,6 +54,15 @@
     <a href="/editors/slider-basic-example-999f7e61c81b" class="leading-tight bg-blue-600 hover:text-gray-100 text-gray-200 rounded px-6 py-3 text-sm">Try Basic Carousel Online</a>
  </div>
 
+<h2 class="font-bold mb-4 text-gray-700 text-xl mt-16">More Carousel example.</h3>
+<div class="bg-gray-300 p-6 border rounded-t-lg mt-16 flex justify-center" style="font-family:Roboto">
+    <img src="https://web2tailwind.com/storage/documents/VzO5UlBQWbhZT0QB0xtDf0zi5X9x5nnLyWzNaol7.png">
+</div>
+
+<div class="p-6 border rounded-t-lg text-center mt-16" style="font-family:Roboto">
+    <a href="/editors/tailwind-carousel-example-with-swiper-js-cd58f14f879e" class="leading-tight bg-blue-600 hover:text-gray-100 text-gray-200 rounded px-6 py-3 text-sm">Try Carousel Online</a>
+ </div>
+
 
 
 <h2 class="font-bold mb-4 text-gray-700 text-xl mt-16">Customer Feedback/Happy Client Carousel style with tailwind css.</h3>
