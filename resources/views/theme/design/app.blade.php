@@ -13,7 +13,7 @@
     <script src="/assets/js/highlight.min.js"></script>
     <link rel="stylesheet" href="/assets/css/dracula.min.css">
     <link
-        href="https://fonts.googleapis.com/css?family=Mulish:wght@300|Source+Code+Pro&family=Fira+Sans:wght@300&display=swap"
+        href="https://fonts.googleapis.com/css?family=Material+Icons|Mulish:wght@300|Source+Code+Pro&family=Fira+Sans:wght@300&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/markdown.css">
     @yield('meta')
