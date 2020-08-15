@@ -1,7 +1,7 @@
 @extends('theme.design.app')
 
 @section('content')
-<div class="w-4/5">
+<div class="w-full lg:w-4/5">
     <h1 class="text-gray-700 font-bold text-2xl md:text-3xl leading-snug">About Us</h1>
     <h2 class="mt-16 mb-4 text-gray-700 font-bold text-2xl md:text-2xl leading-snug">What is Web2tailwind ?</h2>
     <p class="my-4 leading-relaxed text-gray-700">
