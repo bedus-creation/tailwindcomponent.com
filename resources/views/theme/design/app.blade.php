@@ -12,7 +12,8 @@
     <script src="/assets/js/alpine.min.js" defer></script>
     <script src="/assets/js/highlight.min.js"></script>
     <link rel="stylesheet" href="/assets/css/dracula.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Source+Code+Pro|Roboto&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css?family=Mulish:wght@300|Source+Code+Pro&family=Fira+Sans:wght@300&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/markdown.css">
     @yield('meta')
@@ -20,7 +21,7 @@
 </head>
 <style>
     body {
-        font-family: Roboto;
+        font-family: 'Mulish', sans-serif;
     }
 
     pre code {
