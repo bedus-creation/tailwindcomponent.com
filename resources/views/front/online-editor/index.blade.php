@@ -54,7 +54,7 @@
         </div>
         <div class="mb-10">
             <h2 class="font-bold text-2xl text-gray-700 mb-2">Output</h2>
-            <iframe id="iframe" class="w-full" srcdoc="{{$editor->code}}"></iframe>
+            <iframe id="iframe" class="w-full h-min-40" srcdoc="{{$editor->code}}"></iframe>
         </div>
         <div class="mb-10">
             <h2 class="font-bold text-2xl text-gray-700 mb-2">Code</h2>
