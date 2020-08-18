@@ -28,7 +28,7 @@
 @endsection
 
 @section('content')
-<div class="bg-gray-300 block lg:hidden overflow-y-auto">
+<div class="bg-white block lg:hidden overflow-y-auto">
     @include('theme.docx.components.navbar')
     <div class="px-8 mt-4 mb-20">
         <div class="mb-12 h-full rounded-lg shadow-lg" style="background-color:hsl(0, 0%, 100%);">
@@ -52,10 +52,12 @@
                 </div>
             </div>
         </div>
-        <div>
-            <iframe id="iframe" class="w-full min-h-screen m" srcdoc="{{$editor->code}}"></iframe>
+        <div class="mb-10">
+            <h2 class="font-bold text-2xl text-gray-700 mb-2">Output</h2>
+            <iframe id="iframe" class="w-full" srcdoc="{{$editor->code}}"></iframe>
         </div>
-        <div class="my-20">
+        <div class="mb-10">
+            <h2 class="font-bold text-2xl text-gray-700 mb-2">Code</h2>
             <pre><code class="language-html">{{ $editor->code }}</code></pre>
         </div>
     </div>
