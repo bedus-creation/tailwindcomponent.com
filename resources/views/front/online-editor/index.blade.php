@@ -31,13 +31,13 @@
 <div class="bg-gray-300 block lg:hidden overflow-y-auto">
     @include('theme.docx.components.navbar')
     <div class="px-8 mt-4 mb-20">
-        <div class="h-full rounded-lg shadow-lg" style="background-color:hsl(0, 0%, 100%);">
+        <div class="mb-12 h-full rounded-lg shadow-lg" style="background-color:hsl(0, 0%, 100%);">
             <div class="rounded-t-lg w-full h-40"
                 style="background: url({{$pageseo->cover ?? ' '}}); background-size:cover !important; background-position:center !important">
             </div>
             <div class="border-t border-gray-100 px-4 py-4">
                 <div class="mb-2 font-semibold leading-tight text-xl text-gray-800 hover:text-gray-800">
-                    {{ucfirst($pageseo->title)}}
+                    {{ucfirst($editor->title)}}
                 </div>
             </div>
         </div>
@@ -48,6 +48,7 @@
             <pre><code class="language-html">{{ $editor->code }}</code></pre>
         </div>
     </div>
+    @include('theme.front.components.footer')
 </div>
 <div class="hidden lg:block bg-gray-100 md:p-0">
     @inertia
