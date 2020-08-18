@@ -39,12 +39,23 @@
                 <div class="mb-2 font-semibold leading-tight text-xl text-gray-800 hover:text-gray-800">
                     {{ucfirst($editor->title)}}
                 </div>
+                <div class="flex items-center justify-between my-4">
+                    <div class="w-16">
+                        <img class="border border-gray-900 p-2 w-12 h-12 rounded-full" src="/assets/img/icon.png"
+                            style="border-width:1px !important;">
+                    </div>
+                    <div class="flex-1">
+                        <div class="text-gray-700 font-semibold">
+                            Web2tailwind.com
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div>
             <iframe id="iframe" class="w-full min-h-screen m" srcdoc="{{$editor->code}}"></iframe>
         </div>
-        <div class="my-20 px-8">
+        <div class="my-20">
             <pre><code class="language-html">{{ $editor->code }}</code></pre>
         </div>
     </div>
