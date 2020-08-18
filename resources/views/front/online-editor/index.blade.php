@@ -28,10 +28,39 @@
 @endsection
 
 @section('content')
-<div class="bg-gray-100 md:p-0">
+<div class="bg-gray-300 block lg:hidden overflow-y-auto">
+    @include('theme.docx.components.navbar')
+    <div class="px-8 mt-4 mb-20">
+        <div class="h-full rounded-lg shadow-lg" style="background-color:hsl(0, 0%, 100%);">
+            <div class="rounded-t-lg w-full h-40"
+                style="background: url({{$pageseo->cover ?? ' '}}); background-size:cover !important; background-position:center !important">
+            </div>
+            <div class="border-t border-gray-100 px-4 py-4">
+                <div class="mb-2 font-semibold leading-tight text-xl text-gray-800 hover:text-gray-800">
+                    {{ucfirst($pageseo->title)}}
+                </div>
+            </div>
+        </div>
+        <div>
+            <iframe id="iframe" class="w-full min-h-screen m" srcdoc="{{$editor->code}}"></iframe>
+        </div>
+        <div class="my-20 px-8">
+            <pre><code class="language-html">{{ $editor->code }}</code></pre>
+        </div>
+    </div>
+</div>
+<div class="hidden lg:block bg-gray-100 md:p-0">
     @inertia
 </div>
 @endsection
-
 @section('scripts')
+<script>
+    // Selecting the iframe element
+    var iframe = document.getElementById("iframe");
+
+    // Adjusting the iframe height onload event
+    iframe.onload = function(){
+        iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
+    }
+</script>
 @endsection

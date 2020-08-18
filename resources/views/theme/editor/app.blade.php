@@ -17,7 +17,7 @@
     @yield('meta')
 </head>
 
-<body style="font-family:Roboto;overflow:hidden">
+<body class="lg:overflow-hidden" style="font-family:Roboto;">
     @yield('content')
     <script src="{{url(mix('dist/js/intertia.js'))}}"></script>
     @yield('scripts')
@@ -28,6 +28,11 @@
         gtag('js', new Date());
 
         gtag('config', 'UA-106586554-6');
+    </script>
+    <script src="/assets/js/highlight.min.js"></script>
+    <link rel="stylesheet" href="/assets/css/dracula.min.css">
+    <script>
+        hljs.initHighlightingOnLoad();
     </script>
 </body>
 
