@@ -10,6 +10,6 @@
         <a class="px-2 text-blue-600 hover:text-blue-500" href="{{route('contact')}}">Contact Us</a> |
         <a class="px-2 text-blue-600 hover:text-blue-500" href="{{route('copyright')}}">Copyright</a> |
         <a class="px-2 text-blue-600 hover:text-blue-500" href="{{route('code')}}">Code of Conduct</a> |
-        <a class="px-2 text-blue-600 hover:text-blue-500" href="{{route('privacy')}}">Privacy & Policy
+        <a class="px-2 text-blue-600 hover:text-blue-500" href="{{route('privacy')}}">Privacy & Policy</a>
     </div>
 </div>
