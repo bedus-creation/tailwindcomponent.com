@@ -14,3 +14,5 @@ Route::get('/contact-us', [PageController::class, 'contact'])->name('contact');
 Route::get('/copyright', [PageController::class, 'copyright'])->name('copyright');
 Route::get('/code-of-conduct', [PageController::class, 'code'])->name('code');
 Route::get('/privacy-and-policy', [PageController::class, 'privacy'])->name('privacy');
+
+Route::get('{slug}', [PageController::class, 'blog']);

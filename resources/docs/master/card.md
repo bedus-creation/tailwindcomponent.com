@@ -43,13 +43,13 @@ Here we present simple tailwindcss card, with image and a title. Here we present
 Here we present verical cards in tailwindcss, with title, cover image, short description and tags.</p>
 
 
-<div class="p-6 border rounded-t-lg bg-gray-100 lg:flex">
+<div class="p-6 border rounded-t-lg bg-gray-100 lg:flex"  style="font-family:Roboto">
     <div class="px-1">
         <div class="max-w-sm bg-white rounded-lg overflow-hidden shadow-lg">
             <img class="w-full" src="/assets/docs/master/image-01.jpg" alt="Sunset in the mountains">
             <div class="px-6 py-4">
                 <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
-                <p class="text-gray-700 text-base">
+                <p class="text-gray-700 text-base" style="font-family:Roboto">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et
                     perferendis eaque, exercitationem praesentium nihil.
                 </p>
@@ -66,7 +66,7 @@ Here we present verical cards in tailwindcss, with title, cover image, short des
             <img class="w-full" src="/assets/docs/master/image-01.jpg" alt="Sunset in the mountains">
             <div class="px-6 py-4">
                 <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
-                <p class="text-gray-700 text-base">
+                <p class="text-gray-700 text-base" style="font-family:Roboto">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et
                     perferendis eaque, exercitationem praesentium nihil.
                 </p>
@@ -176,47 +176,6 @@ Example code.
     </div>
 </div>
 ```
-
-<div class="mt-10"></div>
-
-## Horizontal cards.
-Here is an example of horizontal card.
-
-<div class="p-6 border rounded-t-lg bg-gray-100">
-    <div class="bg-white px-6 py-6 flex my-4 rounded-lg">
-        <div class="w-48 pr-5">
-            <a href="#" class="mb-4">
-                <img class="rounded" src="/assets/docs/master/image-01.jpg">
-            </a>
-        </div>
-        <div class="flex-1">
-            <h2 class="text-lg font-medium text-gray-800 my-0">Horizontal Cards are so beautiful.</h2>
-            <div class="my-2 text-gray-800 text-xs" style="font-family:Roboto">
-                <span class="pr-4">14 May, 2020</span> <span class="">It Jobs </span>
-            </div>
-            <p class="font-light text-gray-900">
-                This is the example of horizontal cards using tailwind css. These examples are inspired by bootstrap cards design into different websites and others...
-            </p>
-        </div>
-    </div>
-    <div class="flex my-4">
-        <div class="flex-1">
-            <h2 class="text-lg font-medium text-gray-800 my-0">Horizontal Cards are so beautiful.</h2>
-            <div class="my-2 text-gray-800 text-xs">
-                <span class="mr-4">14 May, 2020</span> <span class="">It Jobs </span>
-            </div>
-            <p class="font-light text-gray-900">
-                This is the example of horizontal cards using tailwind css. These examples are inspired by bootstrap cards design into different websites and others...
-            </p>
-        </div>
-        <div class="w-48 pr-3">
-            <a href="#" class="mb-4">
-                <img class="rounded" src="/assets/docs/master/image-01.jpg">
-            </a>
-        </div>
-    </div>
-</div>
-
 
 <div class="mt-10"></div>
 

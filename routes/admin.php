@@ -5,14 +5,15 @@ use App\Application\Admin\Controllers\CategoriesController;
 use App\Application\Admin\Controllers\DashboardController;
 use App\Application\Admin\Controllers\RolesController;
 use App\Application\Admin\Controllers\TagsController;
+use App\Application\Admin\Controllers\MediaController;
 use App\Application\Admin\Controllers\UsersController;
 use App\Application\CMS\Controllers\PageController;
-use App\Domain\User\Enums\Role;
-use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\DocsWriterController;
 use App\Http\Controllers\PageSeoController;
 use App\Http\Controllers\DesignController;
-use App\Http\Controllers\DocsWriterController;
 use App\Http\Controllers\EditorController;
+use Illuminate\Support\Facades\Route;
+use App\Domain\User\Enums\Role;
 
 Route::resource('editors', EditorController::class)->only(['store', 'show']);
 Route::resource('design', DesignController::class)->only(['index', 'show']);
@@ -29,6 +30,7 @@ Route::group(['prefix' => 'admin', 'middleware' => ['role:' . Role::ADMIN . '|' 
     Route::resource('tags', TagsController::class);
     Route::resource('users', UsersController::class)->except(['edit', 'update']);
     Route::resource('roles', RolesController::class);
+    Route::post('/upload/image', MediaController::class);
 });
 
 Route::group(['prefix' => 'admin'], function () {

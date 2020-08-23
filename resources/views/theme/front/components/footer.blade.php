@@ -1,4 +1,4 @@
-<div class="px-8 pt-20" style="font-family: Roboto">
+<div class="px-8 py-20" style="font-family: Roboto">
     <div class="flex justify-center mb-2">
         <div class="font-light text-sm text-gray-600">
             &copy; 2019 - {{date('Y')}} <a href="{{url('/')}}"

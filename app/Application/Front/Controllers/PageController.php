@@ -2,11 +2,17 @@
 
 namespace App\Application\Front\Controllers;
 
+use App\Domain\CMS\Models\Article;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
 class PageController extends Controller
 {
+    public function blog()
+    {
+        $article = Article::where('slug', request()->slug)->firstOrFail();
+        return view('front.blog.show', compact('article'));
+    }
     public function about()
     {
         return view('front.pages.about');

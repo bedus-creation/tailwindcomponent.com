@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e1bd19bfd5486cc838361c7bb6f62427",
+    "content-hash": "3f502daf1369708838c2b1689d01b9c5",
     "packages": [
         {
             "name": "aammui/laravel-media",
-            "version": "0.1.1",
+            "version": "0.6.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bedus-creation/laravel-media.git",
-                "reference": "686dcab75e2b068e7ac5ca33565cd4e3f39a9fe4"
+                "reference": "cc853023a2e38c6af901783aa26bf9c7ffa49cb9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bedus-creation/laravel-media/zipball/686dcab75e2b068e7ac5ca33565cd4e3f39a9fe4",
-                "reference": "686dcab75e2b068e7ac5ca33565cd4e3f39a9fe4",
+                "url": "https://api.github.com/repos/bedus-creation/laravel-media/zipball/cc853023a2e38c6af901783aa26bf9c7ffa49cb9",
+                "reference": "cc853023a2e38c6af901783aa26bf9c7ffa49cb9",
                 "shasum": ""
             },
             "require": {
@@ -63,7 +63,7 @@
                 "media",
                 "media-uploader"
             ],
-            "time": "2020-02-24T16:40:07+00:00"
+            "time": "2020-06-24T14:47:09+00:00"
         },
         {
             "name": "aammui/laravel-taggable",
@@ -6445,5 +6445,6 @@
     "platform": {
         "php": "^7.2.5"
     },
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
 }

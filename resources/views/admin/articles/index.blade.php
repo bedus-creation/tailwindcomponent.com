@@ -47,10 +47,10 @@
             <tbody>
                 @foreach($articles as $item)
                 <tr>
-                    <td>{{$item->title}}</td>
+                    <td><a href="{{url($item->link())}}">{{$item->title}}</a></td>
                     <td class="text-center">{{$item->created_at->format('Y-m-d')}}</td>
                     <td class="flex justify-end">
-                        <a href="#"
+                        <a href="{{route('articles.edit', $item->id)}}"
                             class="border border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-gray-200 rounded flex justify-center items-center h-8 w-8 mr-1">
                             <span class="text-sm material-icons">
                                 edit
@@ -82,9 +82,8 @@
 
 
 @section('scripts')
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
-<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
-    crossorigin="anonymous"></script>
 <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
 <script>
     $(document).ready(function() {
