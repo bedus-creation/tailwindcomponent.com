@@ -27,9 +27,9 @@
             class="border-t lg:border-t-0 w-full flex-grow md:flex items-center md:justify-end md:w-auto">
             <div>
                 <a href="{{url('/design')}}"
-                    class="block md:inline-block font-bold text-base px-2 py-2 leading-none rounded text-gray-700 mt-2 md:mt-0">Blogs</a>
+                    class="block md:inline-block font-bold text-base px-3 lg:px-2 py-2 leading-none rounded text-gray-700 mt-2 md:mt-0">Blogs</a>
                 <a href="{{url('/design')}}"
-                    class="block md:inline-block font-bold text-base px-3 py-2 leading-none rounded text-gray-700 mt-2 md:mt-0">Design</a>
+                    class="block md:inline-block font-bold text-base px-3 lg:px-3 py-2 leading-none rounded text-gray-700 mt-2 md:mt-0">Design</a>
             </div>
             <div class="hidden lg:block pl-3 py-6 lg:py-3 ">
                 <a target="_blank" href="/tailwind/try"
