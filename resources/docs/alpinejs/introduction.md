@@ -7,7 +7,7 @@ AlpineJs documentation defines Alpine js as **"a rugged, minimal framework for c
 
 <h2 class="font-bold mb-4 text-gray-700 text-xl mt-16">Use Cases:</h3>
 
-We already have others powerful javascript framework such as vue.js and react js, so why we need another javascript framework ? well to answer this question we need to first understand about alpine js. Now a days css framework is comming with out including any javascript, alpine js facilates such framework to quickly build user interactive components.
+We already have others powerful javascript framework such as vue and react, so why we need another javascript framework ? well to answer this question we need to first understand about alpine js. Css framework is comming with out including any javascript, alpine js facilates such framework to quickly build user interactive components.
 
 <h2 class="font-bold mb-4 text-gray-700 text-xl mt-16">Installation</h3>
 
@@ -30,3 +30,7 @@ Npm installation requires to include in your application as:
 ```js
 import 'alpinejs'
 ```
+
+<div class="p-6 border rounded-t-lg text-center mt-16" style="font-family:Roboto">
+    <a href="/tailwind/try" class="leading-tight bg-blue-600 hover:text-gray-100 text-gray-200 rounded px-6 py-3 text-sm">Try Online</a>
+</div>
