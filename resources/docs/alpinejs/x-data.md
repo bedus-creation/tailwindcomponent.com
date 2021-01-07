@@ -11,10 +11,7 @@ x-data directive is used to define initial data for a section of html elements,L
 ```html
 <div x-data="{ open: false }">
     <button @click="open = true">Open Dropdown</button>
-    <ul
-        x-show="open"
-        @click.away="open = false"
-    >
+    <ul x-show="open" @click.away="open = false">
         Dropdown Body
     </ul>
 </div>
