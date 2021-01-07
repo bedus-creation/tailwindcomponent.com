@@ -1,4 +1,8 @@
-@extends('theme.design.app')
+@extends('theme.docx.app')
+
+@section('sidebar')
+@include('theme.docx.components.sidebar')
+@endsection
 
 @section('css')
 <script src='https://kit.fontawesome.com/a076d05399.js'></script>

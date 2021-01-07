@@ -2,7 +2,7 @@
     <nav x-data="{show:false}"
         class="container mx-auto px-8 lg:px-20 shadow-lg lg:shadow-none lg:px-0 flex items-center justify-between flex-wrap bg-white py-2">
         <a href="{{url('/')}}" class="flex items-center">
-            <img src="/assets/img/logo.png" alt="web2tailwind.com logo" class="h-8 md:h-10 mr-12 md:mr-0">
+            <img src="/assets/img/logo.png" alt="web2tailwind.com logo" class="h-8 md:h-10 lg:mr-12">
         </a>
         <div class="flex items-center md:hidden">
             <div class="px-3 py-4 lg:py-3">

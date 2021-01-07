@@ -28,9 +28,6 @@
             <div>
                 <a href="{{url('/component')}}"
                     class="block md:inline-block font-bold text-base px-3 lg:px-2 py-2 leading-none rounded text-gray-700 mt-2 md:mt-0">Components</a>
-                <a href="{{url('/alpine-js')}}"
-                    class="block md:inline-block font-bold text-base px-3 lg:px-2 py-2 leading-none rounded text-gray-700 mt-2 md:mt-0">Alpine
-                    JS</a>
                 <a href="{{url('/design')}}"
                     class="block md:inline-block font-bold text-base px-3 lg:px-3 py-2 leading-none rounded text-gray-700 mt-2 md:mt-0">Design</a>
             </div>
