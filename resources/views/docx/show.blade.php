@@ -32,7 +32,5 @@
 @endsection
 
 @section('content')
-<div id="content">
     {!!$content!!}
-</div>
 @endsection

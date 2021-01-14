@@ -1,4 +1,4 @@
-@extends('theme.design.app')
+@extends('theme.docx.app')
 
 @section('title')
 Tailwind Css layout and template design examples.

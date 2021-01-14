@@ -13,7 +13,6 @@
     <script src="/assets/lib/codemirror-5.53.2/mode/javascript/javascript.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Material+Icons|Source+Code+Pro|Roboto&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="{{url(mix('dist/css/app.css'))}}">
     @yield('meta')
 </head>
 
