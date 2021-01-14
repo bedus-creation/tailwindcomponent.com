@@ -13,7 +13,7 @@
                         </a>
                         <div class="border-t border-gray-100 px-4 py-4">
                             <div class="mb-2">
-                                <a target="_blank" href="{{$item->link()}}"
+                                <a href="{{$item->link()}}"
                                    class="font-semibold leading-tight text-xl text-gray-800 hover:text-gray-800">
                                     {{ucfirst($item->title)}}
                                 </a>

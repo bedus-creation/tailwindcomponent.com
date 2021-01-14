@@ -23,9 +23,4 @@ class Article extends Model
         return optional(optional($this->fromCollection('cover')->getMedia())->first())->link()
             ?? "/assets/img/logo.png";
     }
-    public function getCoverAttribute()
-    {
-        return optional(optional($this->fromCollection('cover')->getMedia())->first())->link()
-            ?? "/assets/img/logo.png";
-    }
 }
