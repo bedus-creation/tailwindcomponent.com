@@ -15,5 +15,5 @@ mix.webpackConfig({
 
 mix.js('resources/js/app.js', 'public/dist/js')
     .js('resources/js/intertia.js', 'public/dist/js')
-    .styles('resources/sass/markdown.scss', 'public/dist/css/markdown.css')
+    .styles('resources/sass/markdown.css', 'public/dist/css/markdown.css')
     .version();

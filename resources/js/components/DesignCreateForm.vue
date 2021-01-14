@@ -28,7 +28,7 @@
 </template>
 <script>
 import axios from "axios";
-import session from "@/mixins/session";
+import session from "../mixins/session";
 export default {
   props: ["initcode"],
   mixins: [session],

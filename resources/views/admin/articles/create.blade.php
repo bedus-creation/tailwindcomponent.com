@@ -40,7 +40,7 @@
             </div>
             <div class="mb-2">
                 <label class="block text-gray-600 font-light mb-2">Description</label>
-                <markdown-editor></markdown-editor>
+                <markdown-editor name="description"></markdown-editor>
             </div>
             <div class="mb-6">
                 <label class="block text-gray-600 font-light mb-2">Tags</label>

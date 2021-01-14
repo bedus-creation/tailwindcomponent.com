@@ -6,13 +6,19 @@ use App\Domain\CMS\Models\Article;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
+/**
+ * Class PageController
+ * @package App\Application\Front\Controllers
+ */
 class PageController extends Controller
 {
     public function blog()
     {
         $article = Article::where('slug', request()->slug)->firstOrFail();
-        return view('front.blog.show', compact('article'));
+        $blogs = [];
+        return view('front.blog.show', compact('article', 'blogs'));
     }
+
     public function about()
     {
         return view('front.pages.about');

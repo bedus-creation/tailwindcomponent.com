@@ -8,6 +8,7 @@
     <link rel="icon" href="/assets/img/icon.png" type="image/png">
     <title>@yield('title','Try Tailwind css Online')</title>
     <link href="/assets/css/tailwind.min.css" rel="stylesheet">
+    <script src="/assets/js/alpine.min.js" defer></script>
     <script src="/assets/lib/codemirror-5.53.2/lib/codemirror.js"></script>
     <link rel="stylesheet" href="/assets/lib/codemirror-5.53.2/lib/codemirror.css">
     <script src="/assets/lib/codemirror-5.53.2/mode/javascript/javascript.js"></script>

@@ -6,7 +6,6 @@ Vue.use(InertiaApp)
 // Components Registration
 Vue.component('DesignCreateForm', () => import('./components/DesignCreateForm'));
 Vue.component('ActionButton', () => import('./components/ActionButton'));
-Vue.component('ActionButton', () => import('./components/ActionButton'));
 
 // Use Toastify
 import VueToastify from "vue-toastify";

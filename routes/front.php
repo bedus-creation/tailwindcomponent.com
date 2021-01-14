@@ -1,5 +1,6 @@
 <?php
 
+use App\Application\Front\Controllers\BlogController;
 use App\Application\Front\Controllers\PageController;
 use Illuminate\Support\Facades\Route;
 use App\Application\Front\Controllers\SitemapController;
@@ -15,4 +16,5 @@ Route::get('/copyright', [PageController::class, 'copyright'])->name('copyright'
 Route::get('/code-of-conduct', [PageController::class, 'code'])->name('code');
 Route::get('/privacy-and-policy', [PageController::class, 'privacy'])->name('privacy');
 
-Route::get('{slug}', [PageController::class, 'blog']);
+Route::get('/blogs', [BlogController::class, 'index'])->name('blogs.index');
+Route::get('/blogs/{slug}', [PageController::class, 'blog'])->name('blogs.show');
