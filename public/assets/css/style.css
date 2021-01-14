@@ -5,10 +5,10 @@
     src: url(/dist/iconfont/MaterialIcons-Regular.eot);
     /* For IE6-8 */
     src: local('Material Icons'),
-        local('MaterialIcons-Regular'),
-        url(/dist/iconfont/MaterialIcons-Regular.woff2) format('woff2'),
-        url(/dist/iconfont/MaterialIcons-Regular.woff) format('woff'),
-        url(/dist/iconfont/MaterialIcons-Regular.ttf) format('truetype');
+    local('MaterialIcons-Regular'),
+    url(/dist/iconfont/MaterialIcons-Regular.woff2) format('woff2'),
+    url(/dist/iconfont/MaterialIcons-Regular.woff) format('woff'),
+    url(/dist/iconfont/MaterialIcons-Regular.ttf) format('truetype');
 }
 
 .material-icons {
@@ -56,7 +56,7 @@ a {
 }
 
 #sidebar a {
-    font-family: Roboto !important;
+    font-family: 'Mulish', sans-serif;
 }
 
 pre code {
@@ -105,9 +105,13 @@ p {
     line-height: 1.625;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
     #sidebar {
         top: 70px;
         height: calc(100vh - 70px)
+    }
+
+    #content {
+        width: calc(100% - 16rem);
     }
 }

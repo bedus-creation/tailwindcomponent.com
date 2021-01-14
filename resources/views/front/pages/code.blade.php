@@ -1,4 +1,4 @@
-@extends('theme.design.app')
+@extends('theme.docx.app')
 
 @section('content')
 <h1 class="text-gray-700 font-bold text-2xl md:text-3xl leading-snug">Code of Conduct</h1>
