@@ -16,7 +16,12 @@ class Article extends Model
 
     public function link()
     {
-        return $this->slug;
+        return route('blogs.show',$this->slug);
+    }
+    public function getCoverAttribute()
+    {
+        return optional(optional($this->fromCollection('cover')->getMedia())->first())->link()
+            ?? "/assets/img/logo.png";
     }
     public function getCoverAttribute()
     {

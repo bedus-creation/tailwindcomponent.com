@@ -25,8 +25,8 @@
 </template>
 <script>
 import { codemirror } from "vue-codemirror";
-import EditorManaco from "@/components/EditorManaco";
-import Sidebar from "@/components/Sidebar";
+import EditorManaco from "../../components/EditorManaco";
+import Sidebar from "../../components/Sidebar";
 import "codemirror/theme/dracula.css";
 export default {
   props: ["initcode"],

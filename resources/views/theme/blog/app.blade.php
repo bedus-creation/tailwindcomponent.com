@@ -23,9 +23,9 @@
 <body style="font-family: 'Mulish', sans-serif;">
     <div id="app">
         @include('theme.blog.components.navbar')
-        <div class="container mx-auto px-6 lg:px-20">
+        <div class="container mx-auto px-6">
             <div class="md:flex">
-                <div class="w-full md:w-2/3">
+                <div class="w-full md:w-3/4 lg:w-4/5 mx-auto">
                     @yield('content')
                 </div>
             </div>
