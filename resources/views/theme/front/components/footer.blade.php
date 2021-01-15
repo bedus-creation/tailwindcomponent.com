@@ -1,8 +1,9 @@
-<div class="px-8 py-20" style="font-family: Roboto">
+<div class="px-8 py-20" style="font-family: Mulish">
     <div class="flex justify-center mb-2">
         <div class="font-light text-sm text-gray-600">
-            &copy; 2019 - {{date('Y')}} <a href="{{url('/')}}"
-                class="text-gray-600 hover:text-gray-600">Web2tailwind.com</a>
+            &copy; 2019 - {{date('Y')}}
+            <a href="{{url('/')}}"
+                class="text-base text-gray-600 hover:text-gray-600" style="font-family: 'Source Code Pro';">Web2tailwind.com</a>
         </div>
     </div>
     <div class="flex flex-wrap justify-center text-blue-400">

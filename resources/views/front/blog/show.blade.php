@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="w-full lg:w-4/5 mx-auto">
-        <div class="my-4 font-semibold text-5xl leading-tight text-gray-700">
+        <div class="my-4 font-semibold text-3xl md:text-5xl leading-tight text-gray-700">
             {{ucfirst($article->title)}}
         </div>
         <div class="flex items-center justify-between my-4">
