@@ -1,4 +1,5 @@
 ### TODO:
+* Update the carousel.
 * List the Design. 
 * Login User to Create a new Snippet
 * Can't Edit to Code Snippet
