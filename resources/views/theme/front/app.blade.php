@@ -8,7 +8,7 @@
     <link rel="icon" href="/assets/img/icon.png" type="image/png">
     <title>@yield('title','Tailwind css components examples')</title>
     <link href="/assets/css/tailwind.min.css" rel="stylesheet">
-    <link href="/assets/css/style.css?id=1" rel="stylesheet">
+    <link href="/assets/css/style.css?id=2" rel="stylesheet">
     <script src="/assets/js/alpine.min.js" defer></script>
     <script src="/assets/js/highlight.min.js"></script>
     <link rel="stylesheet" href="/assets/css/dracula.min.css">

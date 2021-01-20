@@ -3,7 +3,7 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <link rel="icon" href="/assets/img/icon.png" type="image/png">
 <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-<link href="/assets/css/style.css?id=1" rel="stylesheet">
+<link href="/assets/css/style.css?id=2" rel="stylesheet">
 <script src="/assets/js/alpine.min.js" defer></script>
 <script src="/assets/js/highlight.min.js"></script>
 <link rel="stylesheet" href="/assets/css/dracula.min.css">
