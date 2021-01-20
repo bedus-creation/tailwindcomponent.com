@@ -1,15 +1,16 @@
 <div class="bg-white border-b-2 border-red-500 sticky shadow-lg md:shadow-none top-0 z-10">
     @include('theme.docx.components.laratail')
     <nav x-data="{show:false}"
-        class="container mx-auto px-6  md:px-0 flex items-center justify-between flex-wrap bg-white py-2">
+        class="container mx-auto px-6 2xl:px-0 flex items-center justify-between flex-wrap bg-white py-2">
         <a href="{{url('/')}}" class="flex items-center">
             <img src="/assets/img/logo.png" alt="web2tailwind.com logo" class="h-8 md:h-10 mr-12 md:mr-0">
         </a>
         <div class="flex items-center md:hidden">
             <div class="px-3 py-4 lg:py-3">
                 <a target="_blank" href="/tailwind/try"
-                    class="bg-green-400 hover:bg-green-500 hover:text-gray-100 text-white font-medium py-2 px-8 rounded-full font-hairline">Try
-                    Online
+                    class="flex items-center bg-green-400 hover:bg-green-500 hover:text-gray-100 text-white font-medium py-2 px-4 md:px-8 rounded-full font-hairline">
+                    <span class="hidden md:inline">Try  Online</span>
+                    <span class="material-icons inline md:hidden">moving</span>
                 </a>
             </div>
             <div>
@@ -26,7 +27,9 @@
         <div @click.away="show = false" :class="{ 'block': show, 'hidden': !show }"
             class="border-t md:border-t-0 w-full flex-grow md:flex items-center md:justify-end md:w-auto">
             <div>
-                <a href="{{url('/design')}}"
+                <a href="{{url('/')}}"
+                class="block md:inline-block font-bold text-base px-2 py-2 leading-none rounded text-gray-700 mt-2 md:mt-0">Components</a>
+                <a href="{{url('/blogs')}}"
                     class="block md:inline-block font-bold text-base px-2 py-2 leading-none rounded text-gray-700 mt-2 md:mt-0">Blogs</a>
                 <a href="{{url('/design')}}"
                     class="block md:inline-block font-bold text-base px-2 md:px-3 py-2 leading-none rounded text-gray-700 mt-2 md:mt-0">Design</a>

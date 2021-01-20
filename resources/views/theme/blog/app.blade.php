@@ -8,7 +8,6 @@
     <link rel="icon" href="/assets/img/icon.png" type="image/png">
     <title>@yield('title','Tailwind css components examples')</title>
     <link href="/assets/css/tailwind.min.css" rel="stylesheet">
-    {{-- <link href="/assets/css/style.css?id=1" rel="stylesheet"> --}}
     <script src="/assets/js/alpine.min.js" defer></script>
     <script src="/assets/js/highlight.min.js"></script>
     <link rel="stylesheet" href="{{mix('/dist/css/markdown.css')}}">
@@ -22,7 +21,7 @@
 
 <body style="font-family: 'Mulish', sans-serif;">
     <div id="app">
-        @include('theme.blog.components.navbar')
+        @include('theme.docx.components.navbar')
         <div class="container mx-auto px-6">
             <div class="md:flex">
                 <div class="w-full md:w-3/4 lg:w-4/5 mx-auto">
@@ -39,16 +38,7 @@
             });
         });
     </script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106586554-6"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-106586554-6');
-    </script>
-    <script data-ad-client="ca-pub-4419475170841205" async
-        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    @include('theme.core.components.scripts')
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
